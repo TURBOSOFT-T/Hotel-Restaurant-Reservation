@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-         
+
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id') ->references('id') ->on('users')->onDelete('cascade') ->onUpdate('cascade');
-            $table->softDeletes();
+
             $table->timestamps();
 
         });
