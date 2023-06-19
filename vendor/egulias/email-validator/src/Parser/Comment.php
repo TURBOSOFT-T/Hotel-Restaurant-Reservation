@@ -29,8 +29,9 @@ class Comment extends PartParser
         $this->commentStrategy = $commentStrategy;
     }
 
-    public function parse() : Result
+    public function parse(): Result
     {
+<<<<<<< HEAD
         if (((array) $this->lexer->token)['type'] === EmailLexer::S_OPENPARENTHESIS) {
             $this->openedParenthesis++;
             if($this->noClosingParenthesis()) {
@@ -40,28 +41,47 @@ class Comment extends PartParser
 
         if (((array) $this->lexer->token)['type'] === EmailLexer::S_CLOSEPARENTHESIS) {
             return new InvalidEmail(new UnOpenedComment(), ((array) $this->lexer->token)['value']);
+=======
+        if ($this->lexer->current->isA(EmailLexer::S_OPENPARENTHESIS)) {
+            $this->openedParenthesis++;
+            if ($this->noClosingParenthesis()) {
+                return new InvalidEmail(new UnclosedComment(), $this->lexer->current->value);
+            }
+        }
+
+        if ($this->lexer->current->isA(EmailLexer::S_CLOSEPARENTHESIS)) {
+            return new InvalidEmail(new UnOpenedComment(), $this->lexer->current->value);
+>>>>>>> 66597818 ( abdou a faire un poushe)
         }
 
         $this->warnings[WarningComment::CODE] = new WarningComment();
 
         $moreTokens = true;
-        while ($this->commentStrategy->exitCondition($this->lexer, $this->openedParenthesis) && $moreTokens){
+        while ($this->commentStrategy->exitCondition($this->lexer, $this->openedParenthesis) && $moreTokens) {
 
             if ($this->lexer->isNextToken(EmailLexer::S_OPENPARENTHESIS)) {
                 $this->openedParenthesis++;
             }
             $this->warnEscaping();
-            if($this->lexer->isNextToken(EmailLexer::S_CLOSEPARENTHESIS)) {
+            if ($this->lexer->isNextToken(EmailLexer::S_CLOSEPARENTHESIS)) {
                 $this->openedParenthesis--;
             }
             $moreTokens = $this->lexer->moveNext();
         }
 
+<<<<<<< HEAD
         if($this->openedParenthesis >= 1) {
             return new InvalidEmail(new UnclosedComment(), ((array) $this->lexer->token)['value']);
         }
         if ($this->openedParenthesis < 0) {
             return new InvalidEmail(new UnOpenedComment(), ((array) $this->lexer->token)['value']);
+=======
+        if ($this->openedParenthesis >= 1) {
+            return new InvalidEmail(new UnclosedComment(), $this->lexer->current->value);
+        }
+        if ($this->openedParenthesis < 0) {
+            return new InvalidEmail(new UnOpenedComment(), $this->lexer->current->value);
+>>>>>>> 66597818 ( abdou a faire un poushe)
         }
 
         $finalValidations = $this->commentStrategy->endOfLoopValidations($this->lexer);
@@ -75,10 +95,14 @@ class Comment extends PartParser
     /**
      * @return bool
      */
-    private function warnEscaping() : bool
+    private function warnEscaping(): bool
     {
         //Backslash found
+<<<<<<< HEAD
         if (((array) $this->lexer->token)['type'] !== EmailLexer::S_BACKSLASH) {
+=======
+        if (!$this->lexer->current->isA(EmailLexer::S_BACKSLASH)) {
+>>>>>>> 66597818 ( abdou a faire un poushe)
             return false;
         }
 
@@ -87,12 +111,19 @@ class Comment extends PartParser
         }
 
         $this->warnings[QuotedPart::CODE] =
+<<<<<<< HEAD
             new QuotedPart($this->lexer->getPrevious()['type'], ((array) $this->lexer->token)['type']);
+=======
+            new QuotedPart($this->lexer->getPrevious()->type, $this->lexer->current->type);
+>>>>>>> 66597818 ( abdou a faire un poushe)
         return true;
-
     }
 
+<<<<<<< HEAD
     private function noClosingParenthesis() : bool
+=======
+    private function noClosingParenthesis(): bool
+>>>>>>> 66597818 ( abdou a faire un poushe)
     {
         try {
             $this->lexer->find(EmailLexer::S_CLOSEPARENTHESIS);

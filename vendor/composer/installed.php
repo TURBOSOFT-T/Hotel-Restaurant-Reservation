@@ -68,18 +68,30 @@
             'dev_requirement' => false,
         ),
         'doctrine/instantiator' => array(
+<<<<<<< HEAD
             'pretty_version' => '1.5.0',
             'version' => '1.5.0.0',
             'reference' => '0a0fa9780f5d4e507415a065172d26a98d02047b',
+=======
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => 'c6222283fa3f4ac679f8b9ced9a4e23f163e80d0',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/instantiator',
             'aliases' => array(),
             'dev_requirement' => true,
         ),
         'doctrine/lexer' => array(
+<<<<<<< HEAD
             'pretty_version' => '2.1.0',
             'version' => '2.1.0.0',
             'reference' => '39ab8fcf5a51ce4b85ca97c7a7d033eb12831124',
+=======
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'reference' => '84a527db05647743d50373e0ec53a152f2cde568',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/lexer',
             'aliases' => array(),
@@ -95,18 +107,30 @@
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(
+<<<<<<< HEAD
             'pretty_version' => '3.2.6',
             'version' => '3.2.6.0',
             'reference' => 'e5997fa97e8790cdae03a9cbd5e78e45e3c7bda7',
+=======
+            'pretty_version' => '4.0.1',
+            'version' => '4.0.1.0',
+            'reference' => '3a85486b709bc384dae8eb78fb2eec649bdb64ff',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../egulias/email-validator',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'fakerphp/faker' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v1.22.0',
             'version' => '1.22.0.0',
             'reference' => 'f85772abd508bd04e20bb4b1bbe260a68d0066d2',
+=======
+            'pretty_version' => 'v1.23.0',
+            'version' => '1.23.0.0',
+            'reference' => 'e3daa170d00fde61ea7719ef47bb09bb8f1d9b01',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../fakerphp/faker',
             'aliases' => array(),
@@ -122,9 +146,15 @@
             'dev_requirement' => true,
         ),
         'firebase/php-jwt' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.5.0',
             'version' => '6.5.0.0',
             'reference' => 'e94e7353302b0c11ec3cfff7180cd0b1743975d2',
+=======
+            'pretty_version' => 'v6.6.0',
+            'version' => '6.6.0.0',
+            'reference' => '5a9cf79b4a2eb347230384648cc7b0d68cd97faa',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../firebase/php-jwt',
             'aliases' => array(),
@@ -482,9 +512,15 @@
             'dev_requirement' => false,
         ),
         'laravel/ui' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v3.4.6',
             'version' => '3.4.6.0',
             'reference' => '65ec5c03f7fee2c8ecae785795b829a15be48c2c',
+=======
+            'pretty_version' => 'v4.2.2',
+            'version' => '4.2.2.0',
+            'reference' => 'a58ec468db4a340b33f3426c778784717a2c144b',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../laravel/ui',
             'aliases' => array(),
@@ -500,9 +536,15 @@
             'dev_requirement' => false,
         ),
         'lcobucci/clock' => array(
+<<<<<<< HEAD
             'pretty_version' => '2.2.0',
             'version' => '2.2.0.0',
             'reference' => 'fb533e093fd61321bfcbac08b131ce805fe183d3',
+=======
+            'pretty_version' => '2.3.0',
+            'version' => '2.3.0.0',
+            'reference' => 'c7aadcd6fd97ed9e199114269c0be3f335e38876',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../lcobucci/clock',
             'aliases' => array(),
@@ -587,9 +629,15 @@
             ),
         ),
         'league/uri' => array(
+<<<<<<< HEAD
             'pretty_version' => '6.7.2',
             'version' => '6.7.2.0',
             'reference' => 'd3b50812dd51f3fbf176344cc2981db03d10fe06',
+=======
+            'pretty_version' => '6.8.0',
+            'version' => '6.8.0.0',
+            'reference' => 'a700b4656e4c54371b799ac61e300ab25a2d1d39',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../league/uri',
             'aliases' => array(),
@@ -758,9 +806,15 @@
             'dev_requirement' => false,
         ),
         'phpseclib/phpseclib' => array(
+<<<<<<< HEAD
             'pretty_version' => '3.0.19',
             'version' => '3.0.19.0',
             'reference' => 'cc181005cf548bfd8a4896383bb825d859259f95',
+=======
+            'pretty_version' => '3.0.20',
+            'version' => '3.0.20.0',
+            'reference' => '543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpseclib/phpseclib',
             'aliases' => array(),
@@ -829,6 +883,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+=======
+        'psr/clock-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
+>>>>>>> 66597818 ( abdou a faire un poushe)
         'psr/container' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -954,9 +1017,15 @@
             'dev_requirement' => false,
         ),
         'ramsey/collection' => array(
+<<<<<<< HEAD
             'pretty_version' => '1.3.0',
             'version' => '1.3.0.0',
             'reference' => 'ad7475d1c9e70b190ecffc58f2d989416af339b4',
+=======
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => 'a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../ramsey/collection',
             'aliases' => array(),
@@ -1122,9 +1191,15 @@
             'dev_requirement' => true,
         ),
         'spatie/backtrace' => array(
+<<<<<<< HEAD
             'pretty_version' => '1.4.0',
             'version' => '1.4.0.0',
             'reference' => 'ec4dd16476b802dbdc6b4467f84032837e316b8c',
+=======
+            'pretty_version' => '1.4.1',
+            'version' => '1.4.1.0',
+            'reference' => '47794d19e3215ace9e005a8f200cd7cc7be52572',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/backtrace',
             'aliases' => array(),
@@ -1176,54 +1251,90 @@
             'dev_requirement' => false,
         ),
         'symfony/console' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'c3ebc83d031b71c39da318ca8b7a07ecc67507ed',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '8788808b07cf0bdd6e4b7fdd23d8ddb1470c83b7',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/console',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/css-selector' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'f1d00bddb83a4cb2138564b2150001cb6ce272b1',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/css-selector',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v3.0.2',
             'version' => '3.0.2.0',
             'reference' => '26954b3d62a6c5fd0ea8a2a00c0353a14978d05c',
+=======
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => '7c3aff79d10325257a001fcf92d991f24fc967cf',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/error-handler' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'c7df52182f43a68522756ac31a532dd5b1e6db67',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '99d2d814a6351461af350ead4d963bd67451236f',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/error-handler',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/event-dispatcher' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => '2eaf8e63bc5b8cefabd4a800157f0d0c094f677a',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/event-dispatcher',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/event-dispatcher-contracts' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v3.0.2',
             'version' => '3.0.2.0',
             'reference' => '7bc61cc2db649b4637d331240c5346dcc7708051',
+=======
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => 'a76aed96a42d2b521153fb382d418e30d18b59df',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/event-dispatcher-contracts',
             'aliases' => array(),
@@ -1236,45 +1347,75 @@
             ),
         ),
         'symfony/finder' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => '5cc9cac6586fc0c28cd173780ca696e419fefa11',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => 'd9b01ba073c44cef617c7907ce2419f8d00d75e2',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/finder',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/http-foundation' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.20',
             'version' => '6.0.20.0',
             'reference' => 'e16b2676a4b3b1fa12378a20b29c364feda2a8d6',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '718a97ed430d34e5c568ea2c44eab708c6efbefb',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-foundation',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/http-kernel' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.20',
             'version' => '6.0.20.0',
             'reference' => '6dc70833fd0ef5e861e17c7854c12d7d86679349',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '241973f3dd900620b1ca052fe409144f11aea748',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-kernel',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/mailer' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'cd60799210c488f545ddde2444dc1aa548322872',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '7b03d9be1dea29bfec0a6c7b603f5072a4c97435',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mailer',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/mime' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'd7052547a0070cbeadd474e172b527a00d657301',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '7b5d2121858cd6efbed778abce9cfdd7ab1f62ad',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mime',
             'aliases' => array(),
@@ -1343,12 +1484,28 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
         'symfony/polyfill-php81' => array(
             'pretty_version' => 'v1.27.0',
             'version' => '1.27.0.0',
             'reference' => '707403074c8ea6e2edaf8794b0157a0bfa52157a',
+=======
+        'symfony/polyfill-php83' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'reference' => '508c652ba3ccf69f8c97f251534f229791b52a57',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-php81',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php83',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-uuid' => array(
+            'pretty_version' => 'v1.27.0',
+            'version' => '1.27.0.0',
+            'reference' => 'f3cf1a645c2734236ed1e2e671e273eeb3586166',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-uuid',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -1362,9 +1519,15 @@
             'dev_requirement' => false,
         ),
         'symfony/process' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => '2114fd60f26a296cc403a7939ab91478475a33d4',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '8741e3ed7fe2e91ec099e02446fb86667a0f1628',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/process',
             'aliases' => array(),
@@ -1380,45 +1543,75 @@
             'dev_requirement' => false,
         ),
         'symfony/routing' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'e56ca9b41c1ec447193474cd86ad7c0b547755ac',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/routing',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/service-contracts' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v3.0.2',
             'version' => '3.0.2.0',
             'reference' => 'd78d39c1599bd1188b8e26bb341da52c3c6d8a66',
+=======
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => '40da9cc13ec349d9e4966ce18b5fbcd724ab10a4',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/service-contracts',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/string' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'd9e72497367c23e08bf94176d2be45b00a9d232a',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => 'f2e190ee75ff0f5eced645ec0be5c66fac81f51f',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/string',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/translation' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => '9c24b3fdbbe9fb2ef3a6afd8bbaadfd72dad681f',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => 'f72b2cba8f79dd9d536f534f76874b58ad37876f',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/translation-contracts' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v3.0.2',
             'version' => '3.0.2.0',
             'reference' => 'acbfbb274e730e5a0236f619b6168d9dedb3e282',
+=======
+            'pretty_version' => 'v3.3.0',
+            'version' => '3.3.0.0',
+            'reference' => '02c24deb352fb0d79db5486c0c79905a85e37e86',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/translation-contracts',
             'aliases' => array(),
@@ -1431,27 +1624,45 @@
             ),
         ),
         'symfony/uid' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => '6499e28b0ac9f2aa3151e11845bdb5cd21e6bb9d',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '01b0f20b1351d997711c56f1638f7a8c3061e384',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/uid',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/var-dumper' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'eb980457fa6899840fe1687e8627a03a7d8a3d52',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => '6acdcd5c122074ee9f7b051e4fb177025c277a0e',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/yaml' => array(
+<<<<<<< HEAD
             'pretty_version' => 'v6.0.19',
             'version' => '6.0.19.0',
             'reference' => 'deec3a812a0305a50db8ae689b183f43d915c884',
+=======
+            'pretty_version' => 'v6.3.0',
+            'version' => '6.3.0.0',
+            'reference' => 'a9a8337aa641ef2aa39c3e028f9107ec391e5927',
+>>>>>>> 66597818 ( abdou a faire un poushe)
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/yaml',
             'aliases' => array(),

@@ -34,11 +34,12 @@ final class SignalRegistry
 
         $this->signalHandlers[$signal][] = $signalHandler;
 
-        pcntl_signal($signal, [$this, 'handle']);
+        pcntl_signal($signal, $this->handle(...));
     }
 
     public static function isSupported(): bool
     {
+<<<<<<< HEAD
         if (!\function_exists('pcntl_signal')) {
             return false;
         }
@@ -48,6 +49,9 @@ final class SignalRegistry
         }
 
         return true;
+=======
+        return \function_exists('pcntl_signal');
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**

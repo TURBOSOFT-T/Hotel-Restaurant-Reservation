@@ -5,6 +5,7 @@ namespace Egulias\EmailValidator;
 use Doctrine\Common\Lexer\AbstractLexer;
 use Doctrine\Common\Lexer\Token;
 
+<<<<<<< HEAD
 /**
  * @extends AbstractLexer<int, string>
  */
@@ -12,6 +13,13 @@ class EmailLexer extends AbstractLexer
 {
     //ASCII values
     public const S_EMPTY            = null;
+=======
+/** @extends AbstractLexer<int, string> */
+class EmailLexer extends AbstractLexer
+{
+    //ASCII values
+    public const S_EMPTY            = -1;
+>>>>>>> 66597818 ( abdou a faire un poushe)
     public const C_NUL              = 0;
     public const S_HTAB             = 9;
     public const S_LF               = 10;
@@ -50,7 +58,11 @@ class EmailLexer extends AbstractLexer
     public const S_CLOSECURLYBRACES = 125;
     public const S_TILDE            = 126;
     public const C_DEL              = 127;
+<<<<<<< HEAD
     public const INVERT_QUESTIONMARK= 168;
+=======
+    public const INVERT_QUESTIONMARK = 168;
+>>>>>>> 66597818 ( abdou a faire un poushe)
     public const INVERT_EXCLAMATION = 173;
     public const GENERIC            = 300;
     public const S_IPV6TAG          = 301;
@@ -135,32 +147,39 @@ class EmailLexer extends AbstractLexer
     protected $hasInvalidTokens = false;
 
     /**
-     * @var array
-     *
-     * @psalm-var array{value:string, type:null|int, position:int}|array<empty, empty>
+     * @var Token<int, string>
      */
-    protected $previous = [];
+    protected Token $previous;
 
     /**
      * The last matched/seen token.
      *
+<<<<<<< HEAD
      * @var array|Token
      *
      * @psalm-suppress NonInvariantDocblockPropertyType
      * @psalm-var array{value:string, type:null|int, position:int}|Token<int, string>
+=======
+     * @var Token<int, string>
+>>>>>>> 66597818 ( abdou a faire un poushe)
      */
-    public $token;
+    public Token $current;
 
     /**
+<<<<<<< HEAD
      * The next token in the input.
      *
      * @var array|Token|null
      *
      * @psalm-suppress NonInvariantDocblockPropertyType
      * @psalm-var array{position: int, type: int|null|string, value: int|string}|Token<int, string>|null
+=======
+     * @var Token<int, string>
+>>>>>>> 66597818 ( abdou a faire un poushe)
      */
-    public $lookahead;
+    private Token $nullToken;
 
+<<<<<<< HEAD
     /** @psalm-var array{value:'', type:null, position:0} */
     private static $nullToken = [
         'value' => '',
@@ -168,6 +187,8 @@ class EmailLexer extends AbstractLexer
         'position' => 0,
     ];
 
+=======
+>>>>>>> 66597818 ( abdou a faire un poushe)
     /** @var string */
     private $accumulator = '';
 
@@ -176,15 +197,27 @@ class EmailLexer extends AbstractLexer
 
     public function __construct()
     {
-        $this->previous = $this->token = self::$nullToken;
+        /** @var Token<int, string> $nullToken */
+        $nullToken = new Token('', self::S_EMPTY, 0);
+        $this->nullToken = $nullToken;
+
+        $this->current = $this->previous = $this->nullToken;
         $this->lookahead = null;
     }
 
+<<<<<<< HEAD
     public function reset() : void
     {
         $this->hasInvalidTokens = false;
         parent::reset();
         $this->previous = $this->token = self::$nullToken;
+=======
+    public function reset(): void
+    {
+        $this->hasInvalidTokens = false;
+        parent::reset();
+        $this->current = $this->previous = $this->nullToken;
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**
@@ -194,7 +227,11 @@ class EmailLexer extends AbstractLexer
      *
      * @psalm-suppress InvalidScalarArgument
      */
+<<<<<<< HEAD
     public function find($type) : bool
+=======
+    public function find($type): bool
+>>>>>>> 66597818 ( abdou a faire un poushe)
     {
         $search = clone $this;
         $search->skipUntil($type);
@@ -210,6 +247,7 @@ class EmailLexer extends AbstractLexer
      *
      * @return boolean
      */
+<<<<<<< HEAD
     public function moveNext() : bool
     {
         if ($this->hasToRecord && $this->previous === self::$nullToken) {
@@ -226,6 +264,25 @@ class EmailLexer extends AbstractLexer
 
         if ($this->hasToRecord) {
             $this->accumulator .= ((array) $this->token)['value'];
+=======
+    public function moveNext(): bool
+    {
+        if ($this->hasToRecord && $this->previous === $this->nullToken) {
+            $this->accumulator .= $this->current->value;
+        }
+
+        $this->previous = $this->current;
+
+        if ($this->lookahead === null) {
+            $this->lookahead = $this->nullToken;
+        }
+
+        $hasNext = parent::moveNext();
+        $this->current = $this->token ?? $this->nullToken;
+
+        if ($this->hasToRecord) {
+            $this->accumulator .= $this->current->value;
+>>>>>>> 66597818 ( abdou a faire un poushe)
         }
 
         return $hasNext;
@@ -238,7 +295,7 @@ class EmailLexer extends AbstractLexer
      * @throws \InvalidArgumentException
      * @return integer
      */
-    protected function getType(&$value)
+    protected function getType(&$value): int
     {
         $encoded = $value;
 
@@ -259,10 +316,10 @@ class EmailLexer extends AbstractLexer
             return self::INVALID;
         }
 
-
-        return  self::GENERIC;
+        return self::GENERIC;
     }
 
+<<<<<<< HEAD
     protected function isValid(string $value) : bool
     {
         return isset($this->charValue[$value]);
@@ -321,24 +378,84 @@ class EmailLexer extends AbstractLexer
     protected function getModifiers() : string
     {
         return self::MODIFIERS;
+=======
+    protected function isValid(string $value): bool
+    {
+        return isset($this->charValue[$value]);
     }
 
-    public function getAccumulatedValues() : string
+    protected function isNullType(string $value): bool
+    {
+        return $value === "\0";
+    }
+
+    protected function isInvalidChar(string $value): bool
+    {
+        return !preg_match(self::INVALID_CHARS_REGEX, $value);
+    }
+
+    protected function isUTF8Invalid(string $value): bool
+    {
+        return preg_match(self::VALID_UTF8_REGEX, $value) !== false;
+    }
+
+    public function hasInvalidTokens(): bool
+    {
+        return $this->hasInvalidTokens;
+    }
+
+    /**
+     * getPrevious
+     *
+     * @return Token<int, string>
+     */
+    public function getPrevious(): Token
+    {
+        return $this->previous;
+    }
+
+    /**
+     * Lexical catchable patterns.
+     *
+     * @return string[]
+     */
+    protected function getCatchablePatterns(): array
+    {
+        return self::CATCHABLE_PATTERNS;
+>>>>>>> 66597818 ( abdou a faire un poushe)
+    }
+
+    /**
+     * Lexical non-catchable patterns.
+     *
+     * @return string[]
+     */
+    protected function getNonCatchablePatterns(): array
+    {
+        return self::NON_CATCHABLE_PATTERNS;
+    }
+
+    protected function getModifiers(): string
+    {
+        return self::MODIFIERS;
+    }
+
+    public function getAccumulatedValues(): string
     {
         return $this->accumulator;
     }
 
-    public function startRecording() : void
+    public function startRecording(): void
     {
         $this->hasToRecord = true;
     }
 
-    public function stopRecording() : void
+    public function stopRecording(): void
     {
         $this->hasToRecord = false;
     }
 
-    public function clearRecorded() : void
+    public function clearRecorded(): void
     {
         $this->accumulator = '';
     }

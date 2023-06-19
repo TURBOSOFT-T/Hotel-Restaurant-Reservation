@@ -10,20 +10,24 @@ use Egulias\EmailValidator\Result\Reason\ExpectingATEXT;
 
 class DomainComment implements CommentStrategy
 {
-    public function exitCondition(EmailLexer $lexer, int $openedParenthesis) : bool
+    public function exitCondition(EmailLexer $lexer, int $openedParenthesis): bool
     {
-        if (($openedParenthesis === 0 && $lexer->isNextToken(EmailLexer::S_DOT))){ // || !$internalLexer->moveNext()) {
+        if (($openedParenthesis === 0 && $lexer->isNextToken(EmailLexer::S_DOT))) { // || !$internalLexer->moveNext()) {
             return false;
         }
 
         return true;
     }
 
-    public function endOfLoopValidations(EmailLexer $lexer) : Result
+    public function endOfLoopValidations(EmailLexer $lexer): Result
     {
         //test for end of string
         if (!$lexer->isNextToken(EmailLexer::S_DOT)) {
+<<<<<<< HEAD
             return new InvalidEmail(new ExpectingATEXT('DOT not found near CLOSEPARENTHESIS'), ((array) $lexer->token)['value']);
+=======
+            return new InvalidEmail(new ExpectingATEXT('DOT not found near CLOSEPARENTHESIS'), $lexer->current->value);
+>>>>>>> 66597818 ( abdou a faire un poushe)
         }
         //add warning
         //Address is valid within the message but cannot be used unmodified for the envelope

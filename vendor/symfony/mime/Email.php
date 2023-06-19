@@ -14,6 +14,7 @@ namespace Symfony\Component\Mime;
 use Symfony\Component\Mime\Exception\LogicException;
 use Symfony\Component\Mime\Part\AbstractPart;
 use Symfony\Component\Mime\Part\DataPart;
+use Symfony\Component\Mime\Part\File;
 use Symfony\Component\Mime\Part\Multipart\AlternativePart;
 use Symfony\Component\Mime\Part\Multipart\MixedPart;
 use Symfony\Component\Mime\Part\Multipart\RelatedPart;
@@ -326,6 +327,7 @@ class Email extends Message
      */
     public function attach($body, string $name = null, string $contentType = null): static
     {
+<<<<<<< HEAD
         if (!\is_string($body) && !\is_resource($body)) {
             throw new \TypeError(sprintf('The body must be a string or a resource (got "%s").', get_debug_type($body)));
         }
@@ -334,6 +336,9 @@ class Email extends Message
         $this->attachments[] = ['body' => $body, 'name' => $name, 'content-type' => $contentType, 'inline' => false];
 
         return $this;
+=======
+        return $this->addPart(new DataPart($body, $name, $contentType));
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**
@@ -341,10 +346,14 @@ class Email extends Message
      */
     public function attachFromPath(string $path, string $name = null, string $contentType = null): static
     {
+<<<<<<< HEAD
         $this->cachedBody = null;
         $this->attachments[] = ['path' => $path, 'name' => $name, 'content-type' => $contentType, 'inline' => false];
 
         return $this;
+=======
+        return $this->addPart(new DataPart(new File($path), $name, $contentType));
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**
@@ -354,6 +363,7 @@ class Email extends Message
      */
     public function embed($body, string $name = null, string $contentType = null): static
     {
+<<<<<<< HEAD
         if (!\is_string($body) && !\is_resource($body)) {
             throw new \TypeError(sprintf('The body must be a string or a resource (got "%s").', get_debug_type($body)));
         }
@@ -362,6 +372,9 @@ class Email extends Message
         $this->attachments[] = ['body' => $body, 'name' => $name, 'content-type' => $contentType, 'inline' => true];
 
         return $this;
+=======
+        return $this->addPart((new DataPart($body, $name, $contentType))->asInline());
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**
@@ -369,34 +382,47 @@ class Email extends Message
      */
     public function embedFromPath(string $path, string $name = null, string $contentType = null): static
     {
+<<<<<<< HEAD
         $this->cachedBody = null;
         $this->attachments[] = ['path' => $path, 'name' => $name, 'content-type' => $contentType, 'inline' => true];
+=======
+        return $this->addPart((new DataPart(new File($path), $name, $contentType))->asInline());
+    }
+>>>>>>> 66597818 ( abdou a faire un poushe)
 
-        return $this;
+    /**
+     * @return $this
+     *
+     * @deprecated since Symfony 6.2, use addPart() instead
+     */
+    public function attachPart(DataPart $part): static
+    {
+        @trigger_deprecation('symfony/mime', '6.2', 'The "%s()" method is deprecated, use "addPart()" instead.', __METHOD__);
+
+        return $this->addPart($part);
     }
 
     /**
      * @return $this
      */
-    public function attachPart(DataPart $part): static
+    public function addPart(DataPart $part): static
     {
         $this->cachedBody = null;
+<<<<<<< HEAD
         $this->attachments[] = ['part' => $part];
+=======
+        $this->attachments[] = $part;
+>>>>>>> 66597818 ( abdou a faire un poushe)
 
         return $this;
     }
 
     /**
-     * @return array|DataPart[]
+     * @return DataPart[]
      */
     public function getAttachments(): array
     {
-        $parts = [];
-        foreach ($this->attachments as $attachment) {
-            $parts[] = $this->createDataPart($attachment);
-        }
-
-        return $parts;
+        return $this->attachments;
     }
 
     public function getBody(): AbstractPart
@@ -408,13 +434,25 @@ class Email extends Message
         return $this->generateBody();
     }
 
+    /**
+     * @return void
+     */
     public function ensureValidity()
+    {
+        $this->ensureBodyValid();
+
+        if ('1' === $this->getHeaders()->getHeaderBody('X-Unsent')) {
+            throw new LogicException('Cannot send messages marked as "draft".');
+        }
+
+        parent::ensureValidity();
+    }
+
+    private function ensureBodyValid(): void
     {
         if (null === $this->text && null === $this->html && !$this->attachments) {
             throw new LogicException('A message must have a text or an HTML part or attachments.');
         }
-
-        parent::ensureValidity();
     }
 
     /**
@@ -442,9 +480,15 @@ class Email extends Message
         if (null !== $this->cachedBody) {
             return $this->cachedBody;
         }
+<<<<<<< HEAD
 
         $this->ensureValidity();
 
+=======
+
+        $this->ensureBodyValid();
+
+>>>>>>> 66597818 ( abdou a faire un poushe)
         [$htmlPart, $otherParts, $relatedParts] = $this->prepareParts();
 
         $part = null === $this->text ? null : new TextPart($this->text, $this->textCharset);
@@ -479,6 +523,7 @@ class Email extends Message
         if (null !== $html) {
             $htmlPart = new TextPart($html, $this->htmlCharset, 'html');
             $html = $htmlPart->getBody();
+<<<<<<< HEAD
             preg_match_all('(<img\s+[^>]*src\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+)))i', $html, $names);
             $names = array_filter(array_unique(array_merge($names[2], $names[3])));
         }
@@ -496,11 +541,31 @@ class Email extends Message
             $related = false;
             foreach ($names as $name) {
                 if ($name !== $attachment['name']) {
+=======
+
+            $regexes = [
+                '<img\s+[^>]*src\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+))',
+                '<\w+\s+[^>]*background\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+))',
+            ];
+            $tmpMatches = [];
+            foreach ($regexes as $regex) {
+                preg_match_all('/'.$regex.'/i', $html, $tmpMatches);
+                $names = array_merge($names, $tmpMatches[2], $tmpMatches[3]);
+            }
+            $names = array_filter(array_unique($names));
+        }
+
+        $otherParts = $relatedParts = [];
+        foreach ($this->attachments as $part) {
+            foreach ($names as $name) {
+                if ($name !== $part->getName() && (!$part->hasContentId() || $name !== $part->getContentId())) {
+>>>>>>> 66597818 ( abdou a faire un poushe)
                     continue;
                 }
                 if (isset($relatedParts[$name])) {
                     continue 2;
                 }
+<<<<<<< HEAD
                 $part->setDisposition('inline');
                 $html = str_replace('cid:'.$name, 'cid:'.$part->getContentId(), $html, $count);
                 if ($count) {
@@ -516,12 +581,26 @@ class Email extends Message
             } else {
                 $otherParts[] = $part;
             }
+=======
+
+                if ($name !== $part->getContentId()) {
+                    $html = str_replace('cid:'.$name, 'cid:'.$part->getContentId(), $html, $count);
+                }
+                $relatedParts[$name] = $part;
+                $part->setName($part->getContentId())->asInline();
+
+                continue 2;
+            }
+
+            $otherParts[] = $part;
+>>>>>>> 66597818 ( abdou a faire un poushe)
         }
         if (null !== $htmlPart) {
             $htmlPart = new TextPart($html, $this->htmlCharset, 'html');
         }
 
         return [$htmlPart, $otherParts, array_values($relatedParts)];
+<<<<<<< HEAD
     }
 
     private function createDataPart(array $attachment): DataPart
@@ -540,6 +619,8 @@ class Email extends Message
         }
 
         return $part;
+=======
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 
     /**
@@ -552,7 +633,10 @@ class Email extends Message
         return $this;
     }
 
-    private function addListAddressHeaderBody(string $name, array $addresses)
+    /**
+     * @return $this
+     */
+    private function addListAddressHeaderBody(string $name, array $addresses): static
     {
         if (!$header = $this->getHeaders()->get($name)) {
             return $this->setListAddressHeaderBody($name, $addresses);
@@ -589,12 +673,6 @@ class Email extends Message
 
         if (\is_resource($this->html)) {
             $this->html = (new TextPart($this->html))->getBody();
-        }
-
-        foreach ($this->attachments as $i => $attachment) {
-            if (isset($attachment['body']) && \is_resource($attachment['body'])) {
-                $this->attachments[$i]['body'] = (new TextPart($attachment['body']))->getBody();
-            }
         }
 
         return [$this->text, $this->textCharset, $this->html, $this->htmlCharset, $this->attachments, parent::__serialize()];

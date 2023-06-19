@@ -19,6 +19,10 @@ use RuntimeException;
 /**
  * Thrown when attempting to access an element that does not exist.
  */
+<<<<<<< HEAD
 class NoSuchElementException extends RuntimeException
+=======
+class NoSuchElementException extends RuntimeException implements CollectionException
+>>>>>>> 66597818 ( abdou a faire un poushe)
 {
 }

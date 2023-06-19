@@ -6,6 +6,16 @@
 # https://symfony.com/doc/current/contributing/code/license.html
 
 _sf_{{ COMMAND_NAME }}() {
+
+    # Use the default completion for shell redirect operators.
+    for w in '>' '>>' '&>' '<'; do
+        if [[ $w = "${COMP_WORDS[COMP_CWORD-1]}" ]]; then
+            compopt -o filenames
+            COMPREPLY=($(compgen -f -- "${COMP_WORDS[COMP_CWORD]}"))
+            return 0
+        fi
+    done
+
     # Use newline as only separator to allow space in completion values
     IFS=$'\n'
     local sf_cmd="${COMP_WORDS[0]}"
@@ -25,7 +35,11 @@ _sf_{{ COMMAND_NAME }}() {
     local cur prev words cword
     _get_comp_words_by_ref -n := cur prev words cword
 
+<<<<<<< HEAD
     local completecmd=("$sf_cmd" "_complete" "--no-interaction" "-sbash" "-c$cword" "-S{{ VERSION }}")
+=======
+    local completecmd=("$sf_cmd" "_complete" "--no-interaction" "-sbash" "-c$cword" "-a{{ VERSION }}")
+>>>>>>> 66597818 ( abdou a faire un poushe)
     for w in ${words[@]}; do
         w=$(printf -- '%b' "$w")
         # remove quotes from typed values

@@ -4,6 +4,12 @@ namespace Egulias\EmailValidator\Warning;
 
 abstract class Warning
 {
+<<<<<<< HEAD
+=======
+    /**
+     * @var int CODE
+     */
+>>>>>>> 66597818 ( abdou a faire un poushe)
     public const CODE = 0;
 
     /**
@@ -40,8 +46,15 @@ abstract class Warning
         return $this->rfcNumber;
     }
 
-    public function __toString()
+    /**
+     * @return string
+     */
+    public function __toString(): string
     {
+<<<<<<< HEAD
         return $this->message() . " rfc: " .  $this->rfcNumber . "internal code: " . static::CODE;
+=======
+        return $this->message() . " rfc: " .  $this->rfcNumber . "internal code: " . strval(static::CODE);
+>>>>>>> 66597818 ( abdou a faire un poushe)
     }
 }
