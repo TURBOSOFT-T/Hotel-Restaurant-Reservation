@@ -12,7 +12,7 @@
         </div>
         <div class="flex flex-col items-center mt-12 text-center">
             <span class="relative inline-flex w-full md:w-auto">
-                <a href="{{ route('reservations.step.one') }}" type="button"
+                <a href="#" type="button"
                     class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-6 text-white bg-green-600 rounded-full lg:w-full md:w-auto hover:bg-green-500 focus:outline-none">
                     Faire une Réservation
                 </a>
@@ -34,21 +34,6 @@
                         <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
 Notre restaurant a commencé son aventure culinaire en 1990 lorsque le chef fondateur, Harley Leunouffa, a ouvert les portes de notre établissement pour offrir une expérience gastronomique unique à nos clients. Depuis lors, nous avons travaillé dur pour créer une ambiance chaleureuse et conviviale pour nos clients, tout en offrant une cuisine raffinée et délicieuse.
 
-<<<<<<< HEAD
-Au fil des ans, notre restaurant est devenu une destination incontournable pour les amateurs de cuisine de qualité. Notre chef a créé un menu unique qui combine les saveurs traditionnelles avec une touche moderne et créative, en utilisant des ingrédients frais et de première qualité.
-                        </p>
-                        <div class="relative flex">
-                            <a href="#_"
-                                class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-green-600 rounded-md sm:mb-0 hover:bg-green-700 sm:w-auto">
-                                En savoir plus
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-=======
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
@@ -97,7 +82,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
@@ -150,7 +135,6 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
->>>>>>> d75aa89fe525df986fe967ba835a24a55253780a
                         </div>
                     </div>
                 </div>
@@ -161,7 +145,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
+
     </section>
     <section class="py-20 bg-gray-50">
         <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
@@ -172,7 +156,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
                         <h2
                             class="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                             POURQUOI NOUS CHOISIR?</h2>
-=======
+
     </div>
     <!-- About End -->
 
@@ -700,8 +684,6 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
 
 
 
-<<<<<<< HEAD
->>>>>>> d75aa89f (update)
 
                         <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Bien sûr ! Les clients devraient choisir notre restaurant pour plusieurs raisons. Tout d'abord, notre cuisine est exceptionnelle. Nous utilisons des ingrédients frais et de première qualité pour créer des plats uniques et délicieux qui raviront les papilles de nos clients. Notre chef est talentueux et créatif, ce qui se reflète dans chacun de nos plats.
 
@@ -749,31 +731,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
             </div>
         </div>
     </section>
-    <section class="mt-8 bg-white">
-        <div class="mt-4 text-center">
-            <h3 class="text-2xl font-bold">Notre Menu</h3>
-            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-                SPECIALITES DU JOUR</h2>
-        </div>
-        <div class="container w-full px-5 py-6 mx-auto">
-            <div class="grid lg:grid-cols-4 gap-y-6">
-                @foreach ($specials->menus as $menu)
-                <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
-                   {{-- <img class="w-full h-48" src="{{ Storage::url($menu->image) }}" alt="Image" /> --}}
-                   <td><img class="w-full h-48" src="{{ asset('images/' . $menu->image) }}" alt="Image" /></td>
-                    <div class="px-6 py-4">
-                        <h4 class="mb-3 text-xl font-semibold tracking-tight text-green-600 uppercase">
-                            {{ $menu->name }}</h4>
-                        <p class="leading-normal text-gray-700">{{ $menu->description }}.</p>
-                    </div>
-                    <div class="flex items-center justify-between p-4">
-                        <span class="text-xl text-green-600">${{ $menu->price }}</span>
-                    </div>
-                </div>
-            @endforeach
-            </div>
-        </div>
-    </section>
+    
     <section class="pt-4 pb-12 bg-gray-800">
         <div class="my-16 text-center">
             <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
@@ -823,7 +781,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
         </div>
     </section>
 </x-guest-layout>
-=======
+
 
         <main class="py-4">
             @yield('content')
@@ -856,4 +814,3 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
 
 </script>
 </html>
->>>>>>> d75aa89fe525df986fe967ba835a24a55253780a

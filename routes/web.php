@@ -11,9 +11,9 @@ use App\Http\Controllers\Frontend\ReservationController as FrontendReservationCo
 use App\Http\Controllers\Frontend\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
-=======
-use \App\Http\Controllers\MenuController;
->>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,15 +40,19 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::resource('/menus', MenuController::class);
     Route::resource('/tables', TableController::class);
     Route::resource('/reservations', ReservationController::class);
+    Route::get('/reservation/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
+Route::post('/reservation/step-one', [FrontendReservationController::class, 'storeStepOne'])->name('reservations.store.step.one');
+Route::get('/reservation/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');
+Route::post('/reservation/step-two', [FrontendReservationController::class, 'storeStepTwo'])->name('reservations.store.step.two');
+Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
+
 });
 
 require __DIR__ . '/auth.php';
 
 Route::get('/contact', [ContactUsFormController::class, 'createForm']);
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
-=======
 Route::resource('menus', "\App\Http\Controllers\MenuController");
 Route::put('/menus/{id}', [MenuController::class, 'update'])->name('menus.update');
 
 
->>>>>>> 78d58579d8af94d392951da7171030736b2e03fa

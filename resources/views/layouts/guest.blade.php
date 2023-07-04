@@ -40,19 +40,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div :class="isOpen ? 'flex' : 'hidden'"
-                class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0">
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="/">Accueil</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('categories.index') }}">Categories</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('menus.index') }}">Notre Menu</a>
-                <a class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 hover:text-green-400"
-                    href="{{ route('reservations.step.one') }}">Faire Reservation</a>
-
-            </div>
         </nav>
     </div>
     <div class="font-sans text-gray-900 antialiased min-h-screen">
