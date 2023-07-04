@@ -8,16 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
-    protected $table= 'categories';
 
-    protected $fillable = ['name', 'slug'];
+    protected $fillable = ['name', 'image', 'description'];
 
-    /* public function films() 
-    { 
-        return $this->hasMany(Film::class); 
-    } */
- public function films()
-{
-    return $this->morphToMany(Film::class, 'filmable');
-} 
+    public function menus()
+    {
+        return $this->belongsToMany(Menu::class, 'category_menu');
+    }
 }
