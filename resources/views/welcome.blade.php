@@ -1,72 +1,54 @@
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Industro - Industrial HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-        <div class="row g-0 d-none d-lg-flex">
-            <div class="col-lg-6 ps-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center text-white">
-                    <span>Follow Us:</span>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-6 text-end">
-                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
-                    <span class="fs-5 fw-bold">+012 345 6789</span>
-                </div>
-            </div>
+<x-guest-layout>
+    <!-- Main Hero Content -->
+    <div class="container max-w-lg px-4 py-32 mx-auto text-left bg-center bg-no-repeat bg-cover md:max-w-none md:text-center"
+        style="background-image: url('https://cdn.pixabay.com/photo/2016/11/18/14/39/beans-1834984_960_720.jpg')">
+        <h1
+            class="font-mono text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 md:text-center sm:leading-none lg:text-5xl">
+            <span class="inline md:block"> BIENVENU AU RESTAURANT BRELLIS  </span>
+        </h1>
+        <div class="mx-auto mt-2 text-green-50 md:text-center lg:text-lg">
+            Réservez dès maintenant pour une expérience culinaire unique. Découvrez notre menu raffiné
+            Profitez d'une ambiance chaleureuse et conviviale,
+        </div>
+        <div class="flex flex-col items-center mt-12 text-center">
+            <span class="relative inline-flex w-full md:w-auto">
+                <a href="{{ route('reservations.step.one') }}" type="button"
+                    class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-6 text-white bg-green-600 rounded-full lg:w-full md:w-auto hover:bg-green-500 focus:outline-none">
+                    Faire une Réservation
+                </a>
         </div>
     </div>
-    <!-- Topbar End -->
+    <!-- End Main Hero Content -->
+    <section class="px-2 py-32 bg-white md:px-0">
+        <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+            <div class="flex flex-wrap items-center sm:-mx-3">
+                <div class="w-full md:w-1/2 md:px-3">
+                    <div class="w-full pb-6 space-y-4 sm:max-w-md lg:max-w-lg lg:space-y-4 lg:pr-0 md:pb-0">
+                        <!-- <h1
+              class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl"
+            > -->
+                        <h3 class="text-xl">NOTRE HISTORIQUE
+                        </h3>
+                        <h2 class="text-4xl text-green-600">Bienvenu</h2>
+                        <!-- </h1> -->
+                        <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
+Notre restaurant a commencé son aventure culinaire en 1990 lorsque le chef fondateur, Harley Leunouffa, a ouvert les portes de notre établissement pour offrir une expérience gastronomique unique à nos clients. Depuis lors, nous avons travaillé dur pour créer une ambiance chaleureuse et conviviale pour nos clients, tout en offrant une cuisine raffinée et délicieuse.
 
+<<<<<<< HEAD
+Au fil des ans, notre restaurant est devenu une destination incontournable pour les amateurs de cuisine de qualité. Notre chef a créé un menu unique qui combine les saveurs traditionnelles avec une touche moderne et créative, en utilisant des ingrédients frais et de première qualité.
+                        </p>
+                        <div class="relative flex">
+                            <a href="#_"
+                                class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-green-600 rounded-md sm:mb-0 hover:bg-green-700 sm:w-auto">
+                                En savoir plus
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+=======
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
@@ -80,25 +62,70 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                @if (Route::has('login'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </li>
-            @endif
+                <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
 
-            @if (Route::has('register'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                </li>
-            @endif
-            @if (Route::has('contact.store'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact.store') }}">{{ __('contact') }}</a>
-                </li>
-            @endif
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('contact.store'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('contact.store') }}">{{ __('contact') }}</a>
+                                </li>
+                            @endif
+                        @else
+
+
+
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+
+
+
+
+                            </li>
+
+
+
+
+
+                        @endguest
+
+
+
+
+
+
+
+
+                    </ul>
                     </div>
                 </div>
-            
+
             </div>
             <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
         </div>
@@ -123,100 +150,29 @@
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
                                 </div>
                             </div>
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25 Years
-                                        of Working Experience</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">The Best Reliable
-                                        Industry Solution</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row gx-3 h-100">
-                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg">
-                        </div>
-                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-2.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
-                    <h1 class="display-5 mb-4">We Are Leader In Industrial Market</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="flex-shrink-0 bg-primary p-4">
-                            <h1 class="display-2">25</h1>
-                            <h5 class="text-white">Years of</h5>
-                            <h5 class="text-white">Experience</h5>
-                        </div>
-                        <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Power & Energy</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Civil Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Chemical Engineering</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Mechanical Engineering</p>
-                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Oil & Gas Engineering</p>
-                        </div>
-                    </div>
-                    <div class="row pt-2">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-envelope-open text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Email us</p>
-                                    <h5 class="mb-0">info@example.com</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <p class="mb-2">Call us</p>
-                                    <h5 class="mb-0">+012 345 6789</h5>
-                                </div>
-                            </div>
-                        </div>
+                <div class="w-full md:w-1/2">
+                    <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/03/13/30/people-2576336_960_720.jpg" />
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
+    </section>
+    <section class="py-20 bg-gray-50">
+        <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+            <div class="flex flex-wrap items-center -mx-3">
+                <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
+                    <div class="w-full lg:max-w-md">
+                        <h2 class="mb-4 text-2xl font-bold">A propos</h2>
+                        <h2
+                            class="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                            POURQUOI NOUS CHOISIR?</h2>
+=======
     </div>
     <!-- About End -->
 
@@ -744,101 +700,130 @@
 
 
 
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+<<<<<<< HEAD
+>>>>>>> d75aa89f (update)
 
-                <ul>
+                        <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Bien sûr ! Les clients devraient choisir notre restaurant pour plusieurs raisons. Tout d'abord, notre cuisine est exceptionnelle. Nous utilisons des ingrédients frais et de première qualité pour créer des plats uniques et délicieux qui raviront les papilles de nos clients. Notre chef est talentueux et créatif, ce qui se reflète dans chacun de nos plats.
 
+                            En plus de la qualité de notre cuisine, notre restaurant offre une expérience culinaire unique. Notre établissement crée une ambiance chaleureuse et conviviale qui permet aux clients de se détendre et de profiter pleinement de leur repas. Notre équipe de service est professionnelle, attentionnée et toujours prête à aider les clients à choisir les plats et les vins qui conviennent le mieux à leurs goûts et à leurs préférences.
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                            De plus, notre restaurant propose un cadre exceptionnel qui ajoute à l'expérience culinaire. Que ce soit une vue imprenable, une architecture remarquable, une décoration élégante ou une ambiance unique, notre établissement offre quelque chose de spécial que les clients ne trouveront nulle part ailleurs. Cela crée une expérience culinaire encore plus mémorable pour les clients.
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
+                            Enfin, notre restaurant organise régulièrement des événements spéciaux tels que des dégustations de vin, des soirées à thème et des menus saisonniers. Ces événements offrent une expérience culinaire encore plus unique et donnent aux clients une raison supplémentaire de choisir notre restaurant.
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                            @if (Route::has('contact.store'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('contact.store') }}">{{ __('contact') }}</a>
-                                </li>
-                            @endif
-                        @else
-                        <li><a class="nav-link" href="{{ route('conversations.index') }}">Online Users</a></li>
-                            <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>
-                            <li><a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a></li>
-
-
-                            <li><a class="nav-link" href="{{ route('projects.index') }}">Manage Project</a></li>
-                            <li><a class="nav-link" href="{{ route('tasks.index') }}">Manage Task</a></li>
-                            <li><a class="nav-link" href="{{ url('ajax-crud-datatable')  }}">Manage companies</a></li>
-
-
-
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Profile') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-
-
-
-
+                            En résumé, les clients devraient choisir notre restaurant pour la qualité de notre cuisine, l'expérience culinaire unique que vous offrez, le service professionnel, le cadre exceptionnel et les événements spéciaux que vous organisez. Tout cela combine pour créer une expérience culinaire mémorable qui incitera les clients à revenir encore et encore.</p>
+                        <ul>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                                    </path>
+                                </svg>
+                                <span class="font-medium text-gray-500">Traitement et Livraison Rapide</span>
                             </li>
-
-
-
-
-
-                        @endguest
-
-
-
-
-
-
-
-
-                    </ul>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="font-medium text-gray-500">Paiement Facile</span>
+                            </li>
+                            <li class="flex items-center py-2 space-x-4 xl:py-3">
+                                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                                <span class="font-medium text-gray-500">100% de Protection et de Sécurite pour votre Application</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img
+                        class="mx-auto sm:max-w-sm lg:max-w-full"
+                        src="https://cdn.pixabay.com/photo/2020/12/31/12/28/cook-5876388_960_720.png"
+                        alt="feature image"></div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-8 bg-white">
+        <div class="mt-4 text-center">
+            <h3 class="text-2xl font-bold">Notre Menu</h3>
+            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                SPECIALITES DU JOUR</h2>
+        </div>
+        <div class="container w-full px-5 py-6 mx-auto">
+            <div class="grid lg:grid-cols-4 gap-y-6">
+                @foreach ($specials->menus as $menu)
+                <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                   {{-- <img class="w-full h-48" src="{{ Storage::url($menu->image) }}" alt="Image" /> --}}
+                   <td><img class="w-full h-48" src="{{ asset('images/' . $menu->image) }}" alt="Image" /></td>
+                    <div class="px-6 py-4">
+                        <h4 class="mb-3 text-xl font-semibold tracking-tight text-green-600 uppercase">
+                            {{ $menu->name }}</h4>
+                        <p class="leading-normal text-gray-700">{{ $menu->description }}.</p>
+                    </div>
+                    <div class="flex items-center justify-between p-4">
+                        <span class="text-xl text-green-600">${{ $menu->price }}</span>
+                    </div>
+                </div>
+            @endforeach
+            </div>
+        </div>
+    </section>
+    <section class="pt-4 pb-12 bg-gray-800">
+        <div class="my-16 text-center">
+            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                Témoignage </h2>
+            <p class="text-xl text-white">Témoignages de clients qui ont visité notre restaurant et qui ont apprécié leur expérience</p>
+        </div>
+        <div class="grid gap-2 lg:grid-cols-3">
+            <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
+                <div class="flex justify-center -mt-16 md:justify-end">
+                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
+                        src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800">client occasionnel</h2>
+                    <p class="mt-2 text-gray-600">J'ai adoré mon expérience dans ce restaurant ! La nourriture était délicieuse et unique, et le service était exceptionnel. J'ai été impressionné par l'attention portée aux détails, du choix des ingrédients à la présentation des plats. Je recommande vivement ce restaurant à tous ceux qui cherchent une expérience culinaire exceptionnelle.</p>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <a href="#" class="text-xl font-medium text-green-500">Roberto Bisseck</a>
                 </div>
             </div>
-        </nav>
+            <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
+                <div class="flex justify-center -mt-16 md:justify-end">
+                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
+                        src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652__340.jpg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800">Cliente occasionnelle</h2>
+                    <p class="mt-2 text-gray-600">Je suis venu dans ce restaurant pour une occasion spéciale et je n'ai pas été déçu. Le cadre était magnifique et l'ambiance était très chaleureuse. Le service était exceptionnel et les plats étaient délicieux, avec une présentation incroyable. C'était vraiment une expérience culinaire unique et mémorable.</p>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <a href="#" class="text-xl font-medium text-green-500">Tatiana Endenne</a>
+                </div>
+            </div>
+            <div class="max-w-md p-4 bg-white rounded-lg shadow-lg">
+                <div class="flex justify-center -mt-16 md:justify-end">
+                    <img class="object-cover w-20 h-20 border-2 border-green-500 rounded-full"
+                        src="https://cdn.pixabay.com/photo/2018/01/18/17/48/purchase-3090818__340.jpg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-semibold text-gray-800">cliente réguliere</h2>
+                    <p class="mt-2 text-gray-600">Je suis venu dans ce restaurant pour un dîner d'affaires et j'ai été impressionné par la qualité de la nourriture et le service professionnel. Les plats étaient délicieux et de haute qualité, et le service était rapide et efficace. Le cadre était également très agréable et j'ai apprécié l'ambiance chaleureuse. Je recommande vivement ce restaurant pour les dîners d'affaires ou toute autre occasion spéciale.</p>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <a href="#" class="text-xl font-medium text-green-500">Marie France</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</x-guest-layout>
+=======
 
         <main class="py-4">
             @yield('content')
@@ -871,3 +856,4 @@
 
 </script>
 </html>
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a

@@ -29,7 +29,7 @@ class ContactUsFormController extends Controller {
             'user_query' => $request->get('message'),
         ), function($message) use ($request){
             $message->from($request->email);
-            $message->to('rahamanchirac@gmail.com', 'Admin')->subject($request->get('subject'));
+            $message->to('tuemothomas@gmail.com', 'Admin')->subject($request->get('subject'));
         });
         return back()->with('success', 'Nous avons bien reçu votre message et vous remercions de nous avoir écrit.');
     }
