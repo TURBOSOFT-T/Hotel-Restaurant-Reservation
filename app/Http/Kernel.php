@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\Admin;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -21,7 +22,6 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        \App\Http\Middleware\ForceJsonResponse::class,
     ];
 
     /**
@@ -64,22 +64,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
-    'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
-    'role_or_permission' => \Spatie\Permission\Middlewares\RoleOrPermissionMiddleware::class,
-    'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
-   'CheckClientCredentials' => \App\Http\Middleware\CheckClientCredentials::class #changed
-   
+        'admin' => Admin::class
     ];
- 
-    protected $middlewarePriority = [
-        \App\Http\Middleware\CheckForMaintenanceMode::class, #changed
-        \Illuminate\Session\Middleware\StartSession::class,
-        \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \Illuminate\Contracts\Auth\Middleware\AuthenticatesRequests::class,
-        \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        \Illuminate\Session\Middleware\AuthenticateSession::class,
-        \Illuminate\Routing\Middleware\SubstituteBindings::class,
-        \Illuminate\Auth\Middleware\Authorize::class
-    ]; 
 }
