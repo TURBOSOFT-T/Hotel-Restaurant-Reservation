@@ -11,6 +11,10 @@ use App\Http\Controllers\Frontend\ReservationController as FrontendReservationCo
 use App\Http\Controllers\Frontend\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
+<<<<<<< HEAD
+=======
+use \App\Http\Controllers\MenuController;
+>>>>>>> d75aa89f (update)
 
 /*
 |--------------------------------------------------------------------------
