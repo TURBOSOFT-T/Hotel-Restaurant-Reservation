@@ -63,24 +63,33 @@ final class Expression
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string $operator;
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     /** @var array<VarSpecifier> */
     private array $varSpecifiers;
     private string $joiner;
     /** @var array<string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
     private array $variableNames;
     private string $expressionString;
 
     private function __construct(string $operator, VarSpecifier ...$varSpecifiers)
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     public readonly array $variableNames;
     public readonly string $value;
 
     private function __construct(private string $operator, VarSpecifier ...$varSpecifiers)
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         $this->varSpecifiers = $varSpecifiers;
         $this->joiner = self::OPERATOR_HASH_LOOKUP[$operator]['joiner'];
@@ -95,6 +104,7 @@ final class Expression
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string>
      */
@@ -121,6 +131,9 @@ final class Expression
 =======
      * @param array{operator:string, varSpecifiers:array<VarSpecifier>} $properties
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @param array{operator:string, varSpecifiers:array<VarSpecifier>} $properties
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public static function __set_state(array $properties): self
     {

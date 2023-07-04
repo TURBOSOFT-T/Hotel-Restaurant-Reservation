@@ -85,6 +85,7 @@ namespace Ramsey\Collection\Map;
 class TypedMap extends AbstractTypedMap
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use TypeTrait;
 
     /**
@@ -105,6 +106,8 @@ class TypedMap extends AbstractTypedMap
 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     /**
      * Constructs a map object of the specified key and value types,
      * optionally with the specified data.
@@ -114,18 +117,24 @@ class TypedMap extends AbstractTypedMap
      * @param array<K, T> $data The initial data to set for this map.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(string $keyType, string $valueType, array $data = [])
     {
         $this->keyType = $keyType;
         $this->valueType = $valueType;
 
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     public function __construct(
         private readonly string $keyType,
         private readonly string $valueType,
         array $data = [],
     ) {
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         parent::__construct($data);
     }
 

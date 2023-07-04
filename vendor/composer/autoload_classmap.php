@@ -243,8 +243,11 @@ return array(
     'Dflydev\\DotAccessData\\Util' => $vendorDir . '/dflydev/dot-access-data/src/Util.php',
     'Doctrine\\Common\\Lexer\\AbstractLexer' => $vendorDir . '/doctrine/lexer/src/AbstractLexer.php',
     'Doctrine\\Common\\Lexer\\Token' => $vendorDir . '/doctrine/lexer/src/Token.php',
+<<<<<<< HEAD
     'Doctrine\\Deprecations\\Deprecation' => $vendorDir . '/doctrine/deprecations/lib/Doctrine/Deprecations/Deprecation.php',
     'Doctrine\\Deprecations\\PHPUnit\\VerifyDeprecations' => $vendorDir . '/doctrine/deprecations/lib/Doctrine/Deprecations/PHPUnit/VerifyDeprecations.php',
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     'Doctrine\\Inflector\\CachedWordInflector' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
     'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
     'Doctrine\\Inflector\\Inflector' => $vendorDir . '/doctrine/inflector/lib/Doctrine/Inflector/Inflector.php',
@@ -5610,15 +5613,21 @@ return array(
     'Symfony\\Component\\Uid\\Factory\\UlidFactory' => $vendorDir . '/symfony/uid/Factory/UlidFactory.php',
     'Symfony\\Component\\Uid\\Factory\\UuidFactory' => $vendorDir . '/symfony/uid/Factory/UuidFactory.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'Symfony\\Component\\Uid\\NilUlid' => $vendorDir . '/symfony/uid/NilUlid.php',
     'Symfony\\Component\\Uid\\NilUuid' => $vendorDir . '/symfony/uid/NilUuid.php',
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     'Symfony\\Component\\Uid\\MaxUlid' => $vendorDir . '/symfony/uid/MaxUlid.php',
     'Symfony\\Component\\Uid\\MaxUuid' => $vendorDir . '/symfony/uid/MaxUuid.php',
     'Symfony\\Component\\Uid\\NilUlid' => $vendorDir . '/symfony/uid/NilUlid.php',
     'Symfony\\Component\\Uid\\NilUuid' => $vendorDir . '/symfony/uid/NilUuid.php',
     'Symfony\\Component\\Uid\\TimeBasedUidInterface' => $vendorDir . '/symfony/uid/TimeBasedUidInterface.php',
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     'Symfony\\Component\\Uid\\Ulid' => $vendorDir . '/symfony/uid/Ulid.php',
     'Symfony\\Component\\Uid\\Uuid' => $vendorDir . '/symfony/uid/Uuid.php',
     'Symfony\\Component\\Uid\\UuidV1' => $vendorDir . '/symfony/uid/UuidV1.php',
@@ -5627,10 +5636,15 @@ return array(
     'Symfony\\Component\\Uid\\UuidV5' => $vendorDir . '/symfony/uid/UuidV5.php',
     'Symfony\\Component\\Uid\\UuidV6' => $vendorDir . '/symfony/uid/UuidV6.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'Symfony\\Component\\Uid\\UuidV7' => $vendorDir . '/symfony/uid/UuidV7.php',
     'Symfony\\Component\\Uid\\UuidV8' => $vendorDir . '/symfony/uid/UuidV8.php',
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    'Symfony\\Component\\Uid\\UuidV7' => $vendorDir . '/symfony/uid/UuidV7.php',
+    'Symfony\\Component\\Uid\\UuidV8' => $vendorDir . '/symfony/uid/UuidV8.php',
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => $vendorDir . '/symfony/var-dumper/Caster/AmqpCaster.php',
     'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => $vendorDir . '/symfony/var-dumper/Caster/ArgsStub.php',
     'Symfony\\Component\\VarDumper\\Caster\\Caster' => $vendorDir . '/symfony/var-dumper/Caster/Caster.php',
@@ -5733,10 +5747,14 @@ return array(
     'Symfony\\Polyfill\\Php80\\Php80' => $vendorDir . '/symfony/polyfill-php80/Php80.php',
     'Symfony\\Polyfill\\Php80\\PhpToken' => $vendorDir . '/symfony/polyfill-php80/PhpToken.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'Symfony\\Polyfill\\Php81\\Php81' => $vendorDir . '/symfony/polyfill-php81/Php81.php',
 =======
     'Symfony\\Polyfill\\Php83\\Php83' => $vendorDir . '/symfony/polyfill-php83/Php83.php',
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    'Symfony\\Polyfill\\Php83\\Php83' => $vendorDir . '/symfony/polyfill-php83/Php83.php',
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     'Symfony\\Polyfill\\Uuid\\Uuid' => $vendorDir . '/symfony/polyfill-uuid/Uuid.php',
     'Termwind\\Actions\\StyleToMethod' => $vendorDir . '/nunomaduro/termwind/src/Actions/StyleToMethod.php',
     'Termwind\\Components\\Anchor' => $vendorDir . '/nunomaduro/termwind/src/Components/Anchor.php',

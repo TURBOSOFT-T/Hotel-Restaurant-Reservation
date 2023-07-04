@@ -438,10 +438,14 @@ class SymfonyStyle extends OutputStyle
         $fetched = $this->bufferedOutput->fetch();
         // Prepend new line if last char isn't EOL:
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!str_ends_with($fetched, "\n")) {
 =======
         if ($fetched && !str_ends_with($fetched, "\n")) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if ($fetched && !str_ends_with($fetched, "\n")) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             $this->newLine();
         }
     }

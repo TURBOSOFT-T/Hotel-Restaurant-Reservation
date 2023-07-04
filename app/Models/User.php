@@ -51,5 +51,15 @@ class User extends Authenticatable
 {
     return $this->hasMany(Project::class);
 }
+public function menus()
+{
+    return $this->hasMany(Menu::class);
+}
 
 }
+
+
+
+
+
+

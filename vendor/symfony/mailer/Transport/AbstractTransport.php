@@ -80,7 +80,10 @@ abstract class AbstractTransport implements TransportInterface
             $envelope = $event->getEnvelope();
             $message = $event->getMessage();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
             if ($message instanceof TemplatedEmail && !$message->isRendered()) {
                 throw new LogicException(sprintf('You must configure a "%s" when a "%s" instance has a text or HTML template set.', BodyRendererInterface::class, get_debug_type($message)));
@@ -102,7 +105,10 @@ abstract class AbstractTransport implements TransportInterface
             return $sentMessage;
         } finally {
             $this->checkThrottling();
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
     }
 

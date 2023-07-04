@@ -21,9 +21,12 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '3bd81c9b8fcc150b69d8b63b4d2ccf23' => __DIR__ . '/..' . '/spatie/flare-client-php/src/helpers.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         '09f6b20656683369174dd6fa83b7e5fb' => __DIR__ . '/..' . '/symfony/polyfill-uuid/bootstrap.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -78,10 +81,14 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         array (
             'Symfony\\Polyfill\\Uuid\\' => 22,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'Symfony\\Polyfill\\Php81\\' => 23,
 =======
             'Symfony\\Polyfill\\Php83\\' => 23,
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            'Symfony\\Polyfill\\Php83\\' => 23,
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -256,6 +263,9 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         ),
         'Termwind\\' => 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/termwind/src',
         ),
@@ -263,6 +273,7 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-uuid',
         ),
+<<<<<<< HEAD
         'Symfony\\Polyfill\\Php81\\' => 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
@@ -273,6 +284,8 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-uuid',
         ),
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Symfony\\Polyfill\\Php83\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
@@ -699,7 +712,10 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'App\\Http\\Controllers\\MenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/MenuController.php',
         'App\\Http\\Controllers\\MessagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/MessagesController.php',
 >>>>>>> 66597818 ( abdou a faire un poushe)
@@ -730,7 +746,10 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'App\\Models\\Company' => __DIR__ . '/../..' . '/app/Models/Company.php',
         'App\\Models\\Film' => __DIR__ . '/../..' . '/app/Models/Film.php',
         'App\\Models\\Menu' => __DIR__ . '/../..' . '/app/Models/Menu.php',
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'App\\Models\\Project' => __DIR__ . '/../..' . '/app/Models/Project.php',
         'App\\Models\\Task' => __DIR__ . '/../..' . '/app/Models/Task.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
@@ -916,10 +935,13 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'Doctrine\\Common\\Lexer\\AbstractLexer' => __DIR__ . '/..' . '/doctrine/lexer/src/AbstractLexer.php',
         'Doctrine\\Common\\Lexer\\Token' => __DIR__ . '/..' . '/doctrine/lexer/src/Token.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Doctrine\\Deprecations\\Deprecation' => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations/Deprecation.php',
         'Doctrine\\Deprecations\\PHPUnit\\VerifyDeprecations' => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations/PHPUnit/VerifyDeprecations.php',
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
         'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
         'Doctrine\\Inflector\\Inflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/Inflector.php',
@@ -6285,15 +6307,21 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'Symfony\\Component\\Uid\\Factory\\UlidFactory' => __DIR__ . '/..' . '/symfony/uid/Factory/UlidFactory.php',
         'Symfony\\Component\\Uid\\Factory\\UuidFactory' => __DIR__ . '/..' . '/symfony/uid/Factory/UuidFactory.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Symfony\\Component\\Uid\\NilUlid' => __DIR__ . '/..' . '/symfony/uid/NilUlid.php',
         'Symfony\\Component\\Uid\\NilUuid' => __DIR__ . '/..' . '/symfony/uid/NilUuid.php',
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Symfony\\Component\\Uid\\MaxUlid' => __DIR__ . '/..' . '/symfony/uid/MaxUlid.php',
         'Symfony\\Component\\Uid\\MaxUuid' => __DIR__ . '/..' . '/symfony/uid/MaxUuid.php',
         'Symfony\\Component\\Uid\\NilUlid' => __DIR__ . '/..' . '/symfony/uid/NilUlid.php',
         'Symfony\\Component\\Uid\\NilUuid' => __DIR__ . '/..' . '/symfony/uid/NilUuid.php',
         'Symfony\\Component\\Uid\\TimeBasedUidInterface' => __DIR__ . '/..' . '/symfony/uid/TimeBasedUidInterface.php',
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Symfony\\Component\\Uid\\Ulid' => __DIR__ . '/..' . '/symfony/uid/Ulid.php',
         'Symfony\\Component\\Uid\\Uuid' => __DIR__ . '/..' . '/symfony/uid/Uuid.php',
         'Symfony\\Component\\Uid\\UuidV1' => __DIR__ . '/..' . '/symfony/uid/UuidV1.php',
@@ -6302,10 +6330,15 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'Symfony\\Component\\Uid\\UuidV5' => __DIR__ . '/..' . '/symfony/uid/UuidV5.php',
         'Symfony\\Component\\Uid\\UuidV6' => __DIR__ . '/..' . '/symfony/uid/UuidV6.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'Symfony\\Component\\Uid\\UuidV7' => __DIR__ . '/..' . '/symfony/uid/UuidV7.php',
         'Symfony\\Component\\Uid\\UuidV8' => __DIR__ . '/..' . '/symfony/uid/UuidV8.php',
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        'Symfony\\Component\\Uid\\UuidV7' => __DIR__ . '/..' . '/symfony/uid/UuidV7.php',
+        'Symfony\\Component\\Uid\\UuidV8' => __DIR__ . '/..' . '/symfony/uid/UuidV8.php',
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Symfony\\Component\\VarDumper\\Caster\\AmqpCaster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/AmqpCaster.php',
         'Symfony\\Component\\VarDumper\\Caster\\ArgsStub' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/ArgsStub.php',
         'Symfony\\Component\\VarDumper\\Caster\\Caster' => __DIR__ . '/..' . '/symfony/var-dumper/Caster/Caster.php',
@@ -6408,10 +6441,14 @@ class ComposerStaticInit3d5fb9aef958533bc1065796b6e616fe
         'Symfony\\Polyfill\\Php80\\Php80' => __DIR__ . '/..' . '/symfony/polyfill-php80/Php80.php',
         'Symfony\\Polyfill\\Php80\\PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/PhpToken.php',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Symfony\\Polyfill\\Php81\\Php81' => __DIR__ . '/..' . '/symfony/polyfill-php81/Php81.php',
 =======
         'Symfony\\Polyfill\\Php83\\Php83' => __DIR__ . '/..' . '/symfony/polyfill-php83/Php83.php',
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        'Symfony\\Polyfill\\Php83\\Php83' => __DIR__ . '/..' . '/symfony/polyfill-php83/Php83.php',
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         'Symfony\\Polyfill\\Uuid\\Uuid' => __DIR__ . '/..' . '/symfony/polyfill-uuid/Uuid.php',
         'Termwind\\Actions\\StyleToMethod' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Actions/StyleToMethod.php',
         'Termwind\\Components\\Anchor' => __DIR__ . '/..' . '/nunomaduro/termwind/src/Components/Anchor.php',

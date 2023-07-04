@@ -45,15 +45,20 @@
     ],
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.4 || ^8.0",
 =======
         "php": "^8.1",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        "php": "^8.1",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         "ext-json": "*",
         "psr/http-message": "^1.0.1",
         "league/uri-interfaces": "^2.3"
     },
     "require-dev": {
+<<<<<<< HEAD
 <<<<<<< HEAD
         "friendsofphp/php-cs-fixer": "^v3.3.2",
         "nyholm/psr7": "^1.5",
@@ -65,6 +70,8 @@
         "phpunit/phpunit": "^9.5.10",
         "psr/http-factory": "^1.0"
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         "friendsofphp/php-cs-fixer": "^v3.9.5",
         "nyholm/psr7": "^1.5.1",
         "php-http/psr7-integration-tests": "^1.1.1",
@@ -75,7 +82,10 @@
         "phpstan/phpstan-strict-rules": "^1.4.3",
         "phpunit/phpunit": "^9.5.24",
         "psr/http-factory": "^1.0.1"
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     },
     "autoload": {
         "psr-4": {

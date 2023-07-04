@@ -328,6 +328,7 @@ class Email extends Message
     public function attach($body, string $name = null, string $contentType = null): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!\is_string($body) && !\is_resource($body)) {
             throw new \TypeError(sprintf('The body must be a string or a resource (got "%s").', get_debug_type($body)));
         }
@@ -339,6 +340,9 @@ class Email extends Message
 =======
         return $this->addPart(new DataPart($body, $name, $contentType));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->addPart(new DataPart($body, $name, $contentType));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**
@@ -347,6 +351,7 @@ class Email extends Message
     public function attachFromPath(string $path, string $name = null, string $contentType = null): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->cachedBody = null;
         $this->attachments[] = ['path' => $path, 'name' => $name, 'content-type' => $contentType, 'inline' => false];
 
@@ -354,6 +359,9 @@ class Email extends Message
 =======
         return $this->addPart(new DataPart(new File($path), $name, $contentType));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->addPart(new DataPart(new File($path), $name, $contentType));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**
@@ -363,6 +371,7 @@ class Email extends Message
      */
     public function embed($body, string $name = null, string $contentType = null): static
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!\is_string($body) && !\is_resource($body)) {
             throw new \TypeError(sprintf('The body must be a string or a resource (got "%s").', get_debug_type($body)));
@@ -375,6 +384,9 @@ class Email extends Message
 =======
         return $this->addPart((new DataPart($body, $name, $contentType))->asInline());
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->addPart((new DataPart($body, $name, $contentType))->asInline());
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**
@@ -383,12 +395,17 @@ class Email extends Message
     public function embedFromPath(string $path, string $name = null, string $contentType = null): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->cachedBody = null;
         $this->attachments[] = ['path' => $path, 'name' => $name, 'content-type' => $contentType, 'inline' => true];
 =======
         return $this->addPart((new DataPart(new File($path), $name, $contentType))->asInline());
     }
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->addPart((new DataPart(new File($path), $name, $contentType))->asInline());
+    }
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
     /**
      * @return $this
@@ -409,10 +426,14 @@ class Email extends Message
     {
         $this->cachedBody = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->attachments[] = ['part' => $part];
 =======
         $this->attachments[] = $part;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $this->attachments[] = $part;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         return $this;
     }
@@ -481,6 +502,7 @@ class Email extends Message
             return $this->cachedBody;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $this->ensureValidity();
 
@@ -489,6 +511,11 @@ class Email extends Message
         $this->ensureBodyValid();
 
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+
+        $this->ensureBodyValid();
+
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         [$htmlPart, $otherParts, $relatedParts] = $this->prepareParts();
 
         $part = null === $this->text ? null : new TextPart($this->text, $this->textCharset);
@@ -523,6 +550,7 @@ class Email extends Message
         if (null !== $html) {
             $htmlPart = new TextPart($html, $this->htmlCharset, 'html');
             $html = $htmlPart->getBody();
+<<<<<<< HEAD
 <<<<<<< HEAD
             preg_match_all('(<img\s+[^>]*src\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+)))i', $html, $names);
             $names = array_filter(array_unique(array_merge($names[2], $names[3])));
@@ -560,11 +588,31 @@ class Email extends Message
             foreach ($names as $name) {
                 if ($name !== $part->getName() && (!$part->hasContentId() || $name !== $part->getContentId())) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+
+            $regexes = [
+                '<img\s+[^>]*src\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+))',
+                '<\w+\s+[^>]*background\s*=\s*(?:([\'"])cid:(.+?)\\1|cid:([^>\s]+))',
+            ];
+            $tmpMatches = [];
+            foreach ($regexes as $regex) {
+                preg_match_all('/'.$regex.'/i', $html, $tmpMatches);
+                $names = array_merge($names, $tmpMatches[2], $tmpMatches[3]);
+            }
+            $names = array_filter(array_unique($names));
+        }
+
+        $otherParts = $relatedParts = [];
+        foreach ($this->attachments as $part) {
+            foreach ($names as $name) {
+                if ($name !== $part->getName() && (!$part->hasContentId() || $name !== $part->getContentId())) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                     continue;
                 }
                 if (isset($relatedParts[$name])) {
                     continue 2;
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $part->setDisposition('inline');
                 $html = str_replace('cid:'.$name, 'cid:'.$part->getContentId(), $html, $count);
@@ -582,6 +630,8 @@ class Email extends Message
                 $otherParts[] = $part;
             }
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
                 if ($name !== $part->getContentId()) {
                     $html = str_replace('cid:'.$name, 'cid:'.$part->getContentId(), $html, $count);
@@ -593,13 +643,17 @@ class Email extends Message
             }
 
             $otherParts[] = $part;
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
         if (null !== $htmlPart) {
             $htmlPart = new TextPart($html, $this->htmlCharset, 'html');
         }
 
         return [$htmlPart, $otherParts, array_values($relatedParts)];
+<<<<<<< HEAD
 <<<<<<< HEAD
     }
 
@@ -621,6 +675,8 @@ class Email extends Message
         return $part;
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

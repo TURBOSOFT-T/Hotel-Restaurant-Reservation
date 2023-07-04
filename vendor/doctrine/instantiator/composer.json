@@ -22,6 +22,7 @@
         "ext-phar":                  "*",
         "ext-pdo":                   "*",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "doctrine/coding-standard":  "^9 || ^11",
         "phpbench/phpbench":         "^0.16 || ^1",
         "phpstan/phpstan":           "^1.4",
@@ -29,13 +30,18 @@
         "phpunit/phpunit":           "^7.5 || ^8.5 || ^9.5",
         "vimeo/psalm": "^4.30 || ^5.4"
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         "doctrine/coding-standard":  "^11",
         "phpbench/phpbench":         "^1.2",
         "phpstan/phpstan":           "^1.9.4",
         "phpstan/phpstan-phpunit":   "^1.3",
         "phpunit/phpunit":           "^9.5.27",
         "vimeo/psalm":               "^5.4"
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     },
     "autoload": {
         "psr-4": {

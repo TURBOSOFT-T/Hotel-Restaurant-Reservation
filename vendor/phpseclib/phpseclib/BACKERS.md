@@ -13,8 +13,13 @@ phpseclib ongoing development is made possible by [Tidelift](https://tidelift.co
 - [Rachel Fish](https://github.com/itsrachelfish)
 - Tharyrok
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [cjhaas](https://github.com/cjhaas)
 =======
 - [cjhaas](https://github.com/cjhaas)
 - [istiak-tridip](https://github.com/istiak-tridip)
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+- [cjhaas](https://github.com/cjhaas)
+- [istiak-tridip](https://github.com/istiak-tridip)
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa

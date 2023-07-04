@@ -45,7 +45,10 @@ final class DumpCompletionCommand extends Command
         $commandName = basename($fullCommand);
         $fullCommand = @realpath($fullCommand) ?: $fullCommand;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         $shell = $this->guessShell();
         [$rcFile, $completionFile] = match ($shell) {
@@ -55,7 +58,10 @@ final class DumpCompletionCommand extends Command
         };
 
         $supportedShells = implode(', ', $this->getSupportedShells());
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         $this
             ->setHelp(<<<EOH
@@ -68,10 +74,14 @@ to use shell autocompletion (currently, {$supportedShells} completion are suppor
 Dump the script to a global completion file and restart your shell:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <info>%command.full_name% bash | sudo tee /etc/bash_completion.d/{$commandName}</>
 =======
     <info>%command.full_name% {$shell} | sudo tee {$completionFile}</>
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    <info>%command.full_name% {$shell} | sudo tee {$completionFile}</>
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
 Or dump the script to a local file and source it:
 
@@ -89,10 +99,14 @@ Or dump the script to a local file and source it:
 Add this to the end of your shell configuration file (e.g. <info>"{$rcFile}"</>):
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <info>eval "$({$fullCommand} completion bash)"</>
 =======
     <info>eval "$({$fullCommand} completion {$shell})"</>
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    <info>eval "$({$fullCommand} completion {$shell})"</>
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 EOH
             )
             ->addArgument('shell', InputArgument::OPTIONAL, 'The shell type (e.g. "bash"), the value of the "$SHELL" env var will be used if this is not given', null, $this->getSupportedShells(...))

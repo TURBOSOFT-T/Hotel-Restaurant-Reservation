@@ -16,11 +16,15 @@ namespace League\Uri\UriTemplate;
 use League\Uri\Exceptions\SyntaxError;
 use League\Uri\Exceptions\TemplateCanNotBeExpanded;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use TypeError;
 use function array_merge;
 =======
 use Stringable;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use Stringable;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 use function array_unique;
 use function preg_match_all;
 use function preg_replace;
@@ -35,6 +39,7 @@ final class Template
     private const REGEXP_EXPRESSION_DETECTOR = '/\{[^}]*}/x';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string $template;
     /** @var array<string, Expression> */
     private array $expressions = [];
@@ -43,13 +48,18 @@ final class Template
 
     private function __construct(string $template, Expression ...$expressions)
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     /** @var array<string, Expression> */
     private array $expressions = [];
     /** @var array<string> */
     public readonly array $variableNames;
 
     private function __construct(public readonly string $value, Expression ...$expressions)
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         $variableNames = [];
         foreach ($expressions as $expression) {
@@ -70,16 +80,20 @@ final class Template
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param object|string $template a string or an object with the __toString method
      *
      * @throws TypeError   if the template is not a string or an object with the __toString method
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @throws SyntaxError if the template contains invalid expressions
      * @throws SyntaxError if the template contains invalid variable specification
      */
     public static function createFromString(Stringable|string $template): self
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (is_object($template) && method_exists($template, '__toString')) {
             $template = (string) $template;
@@ -92,6 +106,9 @@ final class Template
 =======
         $template = (string) $template;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $template = (string) $template;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         /** @var string $remainder */
         $remainder = preg_replace(self::REGEXP_EXPRESSION_DETECTOR, '', $template);
         if (str_contains($remainder, '{') || str_contains($remainder, '}')) {

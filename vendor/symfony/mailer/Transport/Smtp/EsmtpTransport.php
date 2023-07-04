@@ -113,6 +113,7 @@ class EsmtpTransport extends SmtpTransport
     }
 
     public function executeCommand(string $command, array $codes): string
+<<<<<<< HEAD
     {
         return [250] === $codes && str_starts_with($command, 'HELO ') ? $this->doEhloCommand() : parent::executeCommand($command, $codes);
     }
@@ -139,6 +140,34 @@ class EsmtpTransport extends SmtpTransport
                 if (!$ex->getCode()) {
                     throw $e;
                 }
+=======
+    {
+        return [250] === $codes && str_starts_with($command, 'HELO ') ? $this->doEhloCommand() : parent::executeCommand($command, $codes);
+    }
+
+    final protected function getCapabilities(): array
+    {
+        return $this->capabilities;
+    }
+
+    private function doEhloCommand(): string
+    {
+        try {
+            $response = $this->executeCommand(sprintf("EHLO %s\r\n", $this->getLocalDomain()), [250]);
+        } catch (TransportExceptionInterface $e) {
+            try {
+                return parent::executeCommand(sprintf("HELO %s\r\n", $this->getLocalDomain()), [250]);
+            } catch (TransportExceptionInterface $ex) {
+                if (!$ex->getCode()) {
+                    throw $e;
+                }
+
+                throw $ex;
+            }
+        }
+
+        $this->capabilities = $this->parseCapabilities($response);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
                 throw $ex;
             }
@@ -159,6 +188,7 @@ class EsmtpTransport extends SmtpTransport
                 throw new TransportException('Unable to connect with STARTTLS.');
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             $capabilities = $this->callHeloCommand();
 =======
@@ -196,6 +226,21 @@ class EsmtpTransport extends SmtpTransport
             }
         }
 
+=======
+            $response = $this->executeCommand(sprintf("EHLO %s\r\n", $this->getLocalDomain()), [250]);
+            $this->capabilities = $this->parseCapabilities($response);
+        }
+
+        if (\array_key_exists('AUTH', $this->capabilities)) {
+            $this->handleAuth($this->capabilities['AUTH']);
+        }
+
+        return $response;
+    }
+
+    private function parseCapabilities(string $ehloResponse): array
+    {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $capabilities = [];
         $lines = explode("\r\n", trim($response));
         array_shift($lines);

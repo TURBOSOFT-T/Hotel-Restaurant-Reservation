@@ -207,6 +207,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "doctrine/deprecations",
             "version": "v1.1.1",
             "version_normalized": "1.1.1.0",
@@ -279,6 +280,18 @@
             "dist": {
                 "type": "zip",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "name": "doctrine/inflector",
+            "version": "2.0.6",
+            "version_normalized": "2.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/inflector.git",
+                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024"
+            },
+            "dist": {
+                "type": "zip",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "url": "https://api.github.com/repos/doctrine/inflector/zipball/d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
                 "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
                 "shasum": ""
@@ -365,6 +378,7 @@
         {
             "name": "doctrine/instantiator",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.5.0",
             "version_normalized": "1.5.0.0",
             "source": {
@@ -389,12 +403,26 @@
                 "url": "https://api.github.com/repos/doctrine/instantiator/zipball/c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
                 "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
+                "reference": "c6222283fa3f4ac679f8b9ced9a4e23f163e80d0",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "php": "^8.1"
             },
             "require-dev": {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "doctrine/coding-standard": "^9 || ^11",
                 "ext-pdo": "*",
@@ -418,6 +446,18 @@
             },
             "time": "2022-12-30T00:23:10+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "doctrine/coding-standard": "^11",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/phpstan": "^1.9.4",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpunit/phpunit": "^9.5.27",
+                "vimeo/psalm": "^5.4"
+            },
+            "time": "2022-12-30T00:23:10+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -445,10 +485,14 @@
             "support": {
                 "issues": "https://github.com/doctrine/instantiator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/instantiator/tree/1.5.0"
 =======
                 "source": "https://github.com/doctrine/instantiator/tree/2.0.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/doctrine/instantiator/tree/2.0.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -468,6 +512,7 @@
         },
         {
             "name": "doctrine/lexer",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "2.1.0",
             "version_normalized": "2.1.0.0",
@@ -520,6 +565,32 @@
             },
             "time": "2022-12-15T16:57:16+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/lexer.git",
+                "reference": "84a527db05647743d50373e0ec53a152f2cde568"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/84a527db05647743d50373e0ec53a152f2cde568",
+                "reference": "84a527db05647743d50373e0ec53a152f2cde568",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^10",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^9.5",
+                "psalm/plugin-phpunit": "^0.18.3",
+                "vimeo/psalm": "^5.0"
+            },
+            "time": "2022-12-15T16:57:16+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -557,10 +628,14 @@
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/lexer/tree/2.1.0"
 =======
                 "source": "https://github.com/doctrine/lexer/tree/3.0.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/doctrine/lexer/tree/3.0.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -645,6 +720,7 @@
         {
             "name": "egulias/email-validator",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "3.2.6",
             "version_normalized": "3.2.6.0",
             "source": {
@@ -689,15 +765,42 @@
                 "phpunit/phpunit": "^9.5.27",
                 "vimeo/psalm": "^4.30"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "4.0.1",
+            "version_normalized": "4.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egulias/EmailValidator.git",
+                "reference": "3a85486b709bc384dae8eb78fb2eec649bdb64ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/3a85486b709bc384dae8eb78fb2eec649bdb64ff",
+                "reference": "3a85486b709bc384dae8eb78fb2eec649bdb64ff",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "^2.0 || ^3.0",
+                "php": ">=8.1",
+                "symfony/polyfill-intl-idn": "^1.26"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.27",
+                "vimeo/psalm": "^4.30"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-06-01T07:04:22+00:00",
 =======
             "time": "2023-01-14T14:17:03+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-01-14T14:17:03+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -731,10 +834,14 @@
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/egulias/EmailValidator/tree/3.2.6"
 =======
                 "source": "https://github.com/egulias/EmailValidator/tree/4.0.1"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.1"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -746,6 +853,7 @@
         },
         {
             "name": "fakerphp/faker",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v1.22.0",
             "version_normalized": "1.22.0.0",
@@ -771,6 +879,19 @@
                 "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
                 "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v1.23.0",
+            "version_normalized": "1.23.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FakerPHP/Faker.git",
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -796,10 +917,14 @@
                 "ext-mbstring": "Required for multibyte Unicode string functionality."
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-05-14T12:31:37+00:00",
 =======
             "time": "2023-06-12T08:44:38+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-06-12T08:44:38+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -830,10 +955,14 @@
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/FakerPHP/Faker/tree/v1.22.0"
 =======
                 "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "install-path": "../fakerphp/faker"
         },
@@ -914,6 +1043,7 @@
         {
             "name": "firebase/php-jwt",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v6.5.0",
             "version_normalized": "6.5.0.0",
             "source": {
@@ -938,6 +1068,19 @@
                 "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5a9cf79b4a2eb347230384648cc7b0d68cd97faa",
                 "reference": "5a9cf79b4a2eb347230384648cc7b0d68cd97faa",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.6.0",
+            "version_normalized": "6.6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "5a9cf79b4a2eb347230384648cc7b0d68cd97faa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/5a9cf79b4a2eb347230384648cc7b0d68cd97faa",
+                "reference": "5a9cf79b4a2eb347230384648cc7b0d68cd97faa",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -956,10 +1099,14 @@
                 "paragonie/sodium_compat": "Support EdDSA (Ed25519) signatures when libsodium is not present"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-05-12T15:47:07+00:00",
 =======
             "time": "2023-06-13T17:11:06+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-06-13T17:11:06+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -992,10 +1139,14 @@
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/firebase/php-jwt/tree/v6.5.0"
 =======
                 "source": "https://github.com/firebase/php-jwt/tree/v6.6.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/firebase/php-jwt/tree/v6.6.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "install-path": "../firebase/php-jwt"
         },
@@ -2377,6 +2528,7 @@
         {
             "name": "laravel/ui",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v3.4.6",
             "version_normalized": "3.4.6.0",
             "source": {
@@ -2401,6 +2553,19 @@
                 "url": "https://api.github.com/repos/laravel/ui/zipball/a58ec468db4a340b33f3426c778784717a2c144b",
                 "reference": "a58ec468db4a340b33f3426c778784717a2c144b",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v4.2.2",
+            "version_normalized": "4.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "a58ec468db4a340b33f3426c778784717a2c144b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/a58ec468db4a340b33f3426c778784717a2c144b",
+                "reference": "a58ec468db4a340b33f3426c778784717a2c144b",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -2415,10 +2580,14 @@
                 "phpunit/phpunit": "^9.3"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-05-20T13:38:08+00:00",
 =======
             "time": "2023-05-09T19:47:28+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-09T19:47:28+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2454,10 +2623,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/laravel/ui/tree/v3.4.6"
 =======
                 "source": "https://github.com/laravel/ui/tree/v4.2.2"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/laravel/ui/tree/v4.2.2"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "install-path": "../laravel/ui"
         },
@@ -2540,6 +2713,7 @@
         {
             "name": "lcobucci/clock",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "2.2.0",
             "version_normalized": "2.2.0.0",
             "source": {
@@ -2601,6 +2775,39 @@
             },
             "time": "2022-12-19T14:38:11+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "2.3.0",
+            "version_normalized": "2.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/clock.git",
+                "reference": "c7aadcd6fd97ed9e199114269c0be3f335e38876"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/clock/zipball/c7aadcd6fd97ed9e199114269c0be3f335e38876",
+                "reference": "c7aadcd6fd97ed9e199114269c0be3f335e38876",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1.0 || ~8.2.0",
+                "stella-maris/clock": "^0.1.7"
+            },
+            "provide": {
+                "psr/clock-implementation": "1.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.26",
+                "lcobucci/coding-standard": "^9.0",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan": "^1.9.4",
+                "phpstan/phpstan-deprecation-rules": "^1.1.1",
+                "phpstan/phpstan-phpunit": "^1.3.2",
+                "phpstan/phpstan-strict-rules": "^1.4.4",
+                "phpunit/phpunit": "^9.5.27"
+            },
+            "time": "2022-12-19T14:38:11+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -2622,10 +2829,14 @@
             "support": {
                 "issues": "https://github.com/lcobucci/clock/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/lcobucci/clock/tree/2.2.0"
 =======
                 "source": "https://github.com/lcobucci/clock/tree/2.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/lcobucci/clock/tree/2.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -3276,6 +3487,7 @@
         {
             "name": "league/uri",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "6.7.2",
             "version_normalized": "6.7.2.0",
             "source": {
@@ -3300,11 +3512,25 @@
                 "url": "https://api.github.com/repos/thephpleague/uri/zipball/a700b4656e4c54371b799ac61e300ab25a2d1d39",
                 "reference": "a700b4656e4c54371b799ac61e300ab25a2d1d39",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "6.8.0",
+            "version_normalized": "6.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri.git",
+                "reference": "a700b4656e4c54371b799ac61e300ab25a2d1d39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/a700b4656e4c54371b799ac61e300ab25a2d1d39",
+                "reference": "a700b4656e4c54371b799ac61e300ab25a2d1d39",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "league/uri-interfaces": "^2.3",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "php": "^7.4 || ^8.0",
                 "psr/http-message": "^1.0"
@@ -3312,11 +3538,16 @@
                 "php": "^8.1",
                 "psr/http-message": "^1.0.1"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "php": "^8.1",
+                "psr/http-message": "^1.0.1"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "conflict": {
                 "league/uri-schemes": "^1.0"
             },
             "require-dev": {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "friendsofphp/php-cs-fixer": "^v3.3.2",
                 "nyholm/psr7": "^1.5",
@@ -3328,6 +3559,8 @@
                 "phpunit/phpunit": "^9.5.10",
                 "psr/http-factory": "^1.0"
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "friendsofphp/php-cs-fixer": "^v3.9.5",
                 "nyholm/psr7": "^1.5.1",
                 "php-http/psr7-integration-tests": "^1.1.1",
@@ -3338,7 +3571,10 @@
                 "phpstan/phpstan-strict-rules": "^1.4.3",
                 "phpunit/phpunit": "^9.5.24",
                 "psr/http-factory": "^1.0.1"
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "suggest": {
                 "ext-fileinfo": "Needed to create Data URI from a filepath",
@@ -3347,10 +3583,14 @@
                 "psr/http-factory": "Needed to use the URI factory"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-09-13T19:50:42+00:00",
 =======
             "time": "2022-09-13T19:58:47+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2022-09-13T19:58:47+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3402,10 +3642,14 @@
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/thephpleague/uri/tree/6.7.2"
 =======
                 "source": "https://github.com/thephpleague/uri/tree/6.8.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/thephpleague/uri/tree/6.8.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -4638,6 +4882,7 @@
         {
             "name": "phpseclib/phpseclib",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "3.0.19",
             "version_normalized": "3.0.19.0",
             "source": {
@@ -4662,6 +4907,19 @@
                 "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
                 "reference": "543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "3.0.20",
+            "version_normalized": "3.0.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
+                "reference": "543a1da81111a0bfd6ae7bbc2865c5e89ed3fc67",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -4680,10 +4938,14 @@
                 "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-03-05T17:13:09+00:00",
 =======
             "time": "2023-06-13T06:30:34+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-06-13T06:30:34+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4749,10 +5011,14 @@
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/phpseclib/phpseclib/tree/3.0.19"
 =======
                 "source": "https://github.com/phpseclib/phpseclib/tree/3.0.20"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.20"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -5774,6 +6040,7 @@
         {
             "name": "ramsey/collection",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.3.0",
             "version_normalized": "1.3.0.0",
             "source": {
@@ -5807,6 +6074,23 @@
             "require": {
                 "php": "^8.1"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/collection.git",
+                "reference": "a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/collection/zipball/a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5",
+                "reference": "a4b48764bfbb8f3a6a4d1aeb1a35bb5e9ecac4a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "require-dev": {
                 "captainhook/plugin-composer": "^5.3",
@@ -5831,10 +6115,14 @@
                 "vimeo/psalm": "^5.4"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-12-27T19:12:24+00:00",
 =======
             "time": "2022-12-31T21:50:55+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2022-12-31T21:50:55+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "captainhook": {
@@ -5873,10 +6161,14 @@
             "support": {
                 "issues": "https://github.com/ramsey/collection/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/ramsey/collection/tree/1.3.0"
 =======
                 "source": "https://github.com/ramsey/collection/tree/2.0.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/ramsey/collection/tree/2.0.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7000,6 +7292,7 @@
         {
             "name": "spatie/backtrace",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.4.0",
             "version_normalized": "1.4.0.0",
             "source": {
@@ -7024,6 +7317,19 @@
                 "url": "https://api.github.com/repos/spatie/backtrace/zipball/47794d19e3215ace9e005a8f200cd7cc7be52572",
                 "reference": "47794d19e3215ace9e005a8f200cd7cc7be52572",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "1.4.1",
+            "version_normalized": "1.4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/backtrace.git",
+                "reference": "47794d19e3215ace9e005a8f200cd7cc7be52572"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/47794d19e3215ace9e005a8f200cd7cc7be52572",
+                "reference": "47794d19e3215ace9e005a8f200cd7cc7be52572",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -7036,10 +7342,14 @@
                 "symfony/var-dumper": "^5.1"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-03-04T08:57:24+00:00",
 =======
             "time": "2023-06-13T14:35:04+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-06-13T14:35:04+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7067,10 +7377,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/spatie/backtrace/tree/1.4.0"
 =======
                 "source": "https://github.com/spatie/backtrace/tree/1.4.1"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/spatie/backtrace/tree/1.4.1"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7434,6 +7748,9 @@
                 "url": "https://api.github.com/repos/stella-maris-solutions/clock/zipball/fa23ce16019289a18bb3446fdecd45befcdd94f8",
                 "reference": "fa23ce16019289a18bb3446fdecd45befcdd94f8",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -7473,6 +7790,7 @@
         },
         {
             "name": "symfony/console",
+<<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
             "source": {
@@ -7525,6 +7843,8 @@
         },
         {
             "name": "symfony/console",
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "version": "v6.3.0",
             "version_normalized": "6.3.0.0",
             "source": {
@@ -7565,6 +7885,7 @@
                 "symfony/var-dumper": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
@@ -7575,6 +7896,9 @@
 =======
             "time": "2023-05-29T12:49:39+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-29T12:49:39+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7609,10 +7933,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/console/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/console/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/console/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7632,6 +7960,7 @@
         },
         {
             "name": "symfony/css-selector",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -7657,16 +7986,33 @@
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf",
                 "reference": "88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf",
+                "reference": "88453e64cd86c5b60e8d2fb2c6f953bbc353ffbf",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-01-01T08:36:10+00:00",
 =======
             "time": "2023-03-20T16:43:42+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-03-20T16:43:42+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7699,10 +8045,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/css-selector/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/css-selector/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/css-selector/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7723,12 +8073,17 @@
         {
             "name": "symfony/deprecation-contracts",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
 =======
             "version": "v3.3.0",
             "version_normalized": "3.3.0.0",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v3.3.0",
+            "version_normalized": "3.3.0.0",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
@@ -7778,10 +8133,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/deprecation-contracts/tree/v3.0.2"
 =======
                 "source": "https://github.com/symfony/deprecation-contracts/tree/v3.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7801,6 +8160,7 @@
         },
         {
             "name": "symfony/error-handler",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -7826,6 +8186,19 @@
                 "url": "https://api.github.com/repos/symfony/error-handler/zipball/99d2d814a6351461af350ead4d963bd67451236f",
                 "reference": "99d2d814a6351461af350ead4d963bd67451236f",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/error-handler.git",
+                "reference": "99d2d814a6351461af350ead4d963bd67451236f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/99d2d814a6351461af350ead4d963bd67451236f",
+                "reference": "99d2d814a6351461af350ead4d963bd67451236f",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -7842,10 +8215,14 @@
                 "symfony/serializer": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-01-01T08:36:10+00:00",
 =======
             "time": "2023-05-10T12:03:13+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-10T12:03:13+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "bin": [
                 "Resources/bin/patch-type-declarations"
             ],
@@ -7877,10 +8254,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/error-handler/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/error-handler/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/error-handler/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -7900,6 +8281,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -7925,6 +8307,19 @@
                 "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa",
                 "reference": "3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa",
+                "reference": "3af8ac1a3f98f6dbc55e10ae59c9e44bfc38dfaa",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -7950,6 +8345,7 @@
                 "symfony/stopwatch": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/dependency-injection": "",
                 "symfony/http-kernel": ""
@@ -7958,6 +8354,9 @@
 =======
             "time": "2023-04-21T14:41:17+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-04-21T14:41:17+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -7986,10 +8385,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/event-dispatcher/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8010,12 +8413,17 @@
         {
             "name": "symfony/event-dispatcher-contracts",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
 =======
             "version": "v3.3.0",
             "version_normalized": "3.3.0.0",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v3.3.0",
+            "version_normalized": "3.3.0.0",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
@@ -8074,10 +8482,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.0.2"
 =======
                 "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8097,6 +8509,7 @@
         },
         {
             "name": "symfony/finder",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -8122,19 +8535,38 @@
                 "url": "https://api.github.com/repos/symfony/finder/zipball/d9b01ba073c44cef617c7907ce2419f8d00d75e2",
                 "reference": "d9b01ba073c44cef617c7907ce2419f8d00d75e2",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "d9b01ba073c44cef617c7907ce2419f8d00d75e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/d9b01ba073c44cef617c7907ce2419f8d00d75e2",
+                "reference": "d9b01ba073c44cef617c7907ce2419f8d00d75e2",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-01-20T17:44:14+00:00",
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "require-dev": {
                 "symfony/filesystem": "^6.0"
             },
             "time": "2023-04-02T01:25:41+00:00",
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8163,10 +8595,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/finder/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/finder/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/finder/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8186,6 +8622,7 @@
         },
         {
             "name": "symfony/http-foundation",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.20",
             "version_normalized": "6.0.20.0",
@@ -8211,6 +8648,19 @@
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/718a97ed430d34e5c568ea2c44eab708c6efbefb",
                 "reference": "718a97ed430d34e5c568ea2c44eab708c6efbefb",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "718a97ed430d34e5c568ea2c44eab708c6efbefb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/718a97ed430d34e5c568ea2c44eab708c6efbefb",
+                "reference": "718a97ed430d34e5c568ea2c44eab708c6efbefb",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -8233,6 +8683,7 @@
                 "symfony/rate-limiter": "^5.2|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/mime": "To use the file extension guesser"
             },
@@ -8240,6 +8691,9 @@
 =======
             "time": "2023-05-19T12:46:45+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-19T12:46:45+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8268,10 +8722,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-foundation/tree/v6.0.20"
 =======
                 "source": "https://github.com/symfony/http-foundation/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/http-foundation/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8291,6 +8749,7 @@
         },
         {
             "name": "symfony/http-kernel",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.20",
             "version_normalized": "6.0.20.0",
@@ -8316,6 +8775,19 @@
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/241973f3dd900620b1ca052fe409144f11aea748",
                 "reference": "241973f3dd900620b1ca052fe409144f11aea748",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-kernel.git",
+                "reference": "241973f3dd900620b1ca052fe409144f11aea748"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/241973f3dd900620b1ca052fe409144f11aea748",
+                "reference": "241973f3dd900620b1ca052fe409144f11aea748",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -8374,6 +8846,7 @@
                 "twig/twig": "^2.13|^3.0.4"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/browser-kit": "",
                 "symfony/config": "",
@@ -8384,6 +8857,9 @@
 =======
             "time": "2023-05-30T19:03:32+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-30T19:03:32+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8412,10 +8888,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-kernel/tree/v6.0.20"
 =======
                 "source": "https://github.com/symfony/http-kernel/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/http-kernel/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8435,6 +8915,7 @@
         },
         {
             "name": "symfony/mailer",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -8460,15 +8941,32 @@
                 "url": "https://api.github.com/repos/symfony/mailer/zipball/7b03d9be1dea29bfec0a6c7b603f5072a4c97435",
                 "reference": "7b03d9be1dea29bfec0a6c7b603f5072a4c97435",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mailer.git",
+                "reference": "7b03d9be1dea29bfec0a6c7b603f5072a4c97435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/7b03d9be1dea29bfec0a6c7b603f5072a4c97435",
+                "reference": "7b03d9be1dea29bfec0a6c7b603f5072a4c97435",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "^2.1.10|^3|^4",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "php": ">=8.0.2",
 =======
                 "php": ">=8.1",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "php": ">=8.1",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "psr/event-dispatcher": "^1",
                 "psr/log": "^1|^2|^3",
                 "symfony/event-dispatcher": "^5.4|^6.0",
@@ -8489,10 +8987,14 @@
                 "symfony/twig-bridge": "^6.2"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-01-11T11:50:03+00:00",
 =======
             "time": "2023-05-29T12:49:39+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-29T12:49:39+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8521,10 +9023,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mailer/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/mailer/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/mailer/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -8544,6 +9050,7 @@
         },
         {
             "name": "symfony/mime",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -8569,6 +9076,19 @@
                 "url": "https://api.github.com/repos/symfony/mime/zipball/7b5d2121858cd6efbed778abce9cfdd7ab1f62ad",
                 "reference": "7b5d2121858cd6efbed778abce9cfdd7ab1f62ad",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "7b5d2121858cd6efbed778abce9cfdd7ab1f62ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/7b5d2121858cd6efbed778abce9cfdd7ab1f62ad",
+                "reference": "7b5d2121858cd6efbed778abce9cfdd7ab1f62ad",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -8582,6 +9102,7 @@
                 "phpdocumentor/type-resolver": "<1.4.0",
                 "symfony/mailer": "<5.4",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "symfony/serializer": "<5.4.14|>=6.0,<6.0.14|>=6.1,<6.1.6"
             },
             "require-dev": {
@@ -8593,10 +9114,18 @@
                 "egulias/email-validator": "^2.1.10|^3.1|^4",
                 "league/html-to-markdown": "^5.0",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "symfony/serializer": "<6.2"
+            },
+            "require-dev": {
+                "egulias/email-validator": "^2.1.10|^3.1|^4",
+                "league/html-to-markdown": "^5.0",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
                 "symfony/dependency-injection": "^5.4|^6.0",
                 "symfony/property-access": "^5.4|^6.0",
                 "symfony/property-info": "^5.4|^6.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "symfony/serializer": "^5.4.14|~6.0.14|^6.1.6"
             },
@@ -8606,6 +9135,11 @@
             },
             "time": "2023-04-28T15:57:00+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "symfony/serializer": "^6.2"
+            },
+            "time": "2023-04-28T15:57:00+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -8638,10 +9172,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mime/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/mime/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/mime/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -9258,14 +9796,19 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "symfony/polyfill-php81",
 =======
             "name": "symfony/polyfill-php83",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "name": "symfony/polyfill-php83",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "version": "v1.27.0",
             "version_normalized": "1.27.0.0",
             "source": {
                 "type": "git",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "url": "https://github.com/symfony/polyfill-php81.git",
                 "reference": "707403074c8ea6e2edaf8794b0157a0bfa52157a"
@@ -9283,6 +9826,15 @@
                 "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/508c652ba3ccf69f8c97f251534f229791b52a57",
                 "reference": "508c652ba3ccf69f8c97f251534f229791b52a57",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "url": "https://github.com/symfony/polyfill-php83.git",
+                "reference": "508c652ba3ccf69f8c97f251534f229791b52a57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/508c652ba3ccf69f8c97f251534f229791b52a57",
+                "reference": "508c652ba3ccf69f8c97f251534f229791b52a57",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -9333,10 +9885,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-php81/tree/v1.27.0"
 =======
                 "source": "https://github.com/symfony/polyfill-php83/tree/v1.27.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.27.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -9368,6 +9924,9 @@
                 "url": "https://api.github.com/repos/symfony/polyfill-uuid/zipball/f3cf1a645c2734236ed1e2e671e273eeb3586166",
                 "reference": "f3cf1a645c2734236ed1e2e671e273eeb3586166",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -9442,6 +10001,7 @@
         },
         {
             "name": "symfony/process",
+<<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
             "source": {
@@ -9532,6 +10092,8 @@
         },
         {
             "name": "symfony/process",
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "version": "v6.3.0",
             "version_normalized": "6.3.0.0",
             "source": {
@@ -9549,7 +10111,10 @@
                 "php": ">=8.1"
             },
             "time": "2023-05-19T08:06:44+00:00",
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -9578,10 +10143,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/process/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/process/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/process/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -9693,6 +10262,7 @@
         {
             "name": "symfony/routing",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
             "source": {
@@ -9717,6 +10287,19 @@
                 "url": "https://api.github.com/repos/symfony/routing/zipball/827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b",
                 "reference": "827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/routing.git",
+                "reference": "827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b",
+                "reference": "827f59fdc67eecfc4dfff81f9c93bf4d98f0c89b",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -9738,6 +10321,7 @@
                 "symfony/yaml": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/config": "For using the all-in-one router or any loader",
                 "symfony/expression-language": "For using expression matching",
@@ -9748,6 +10332,9 @@
 =======
             "time": "2023-04-28T15:57:00+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-04-28T15:57:00+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -9782,10 +10369,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/routing/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/routing/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/routing/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -9805,6 +10396,7 @@
         },
         {
             "name": "symfony/service-contracts",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
@@ -9830,6 +10422,19 @@
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/40da9cc13ec349d9e4966ce18b5fbcd724ab10a4",
                 "reference": "40da9cc13ec349d9e4966ce18b5fbcd724ab10a4",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v3.3.0",
+            "version_normalized": "3.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "40da9cc13ec349d9e4966ce18b5fbcd724ab10a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/40da9cc13ec349d9e4966ce18b5fbcd724ab10a4",
+                "reference": "40da9cc13ec349d9e4966ce18b5fbcd724ab10a4",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -9840,6 +10445,7 @@
                 "ext-psr": "<1.1|>=2"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/service-implementation": ""
             },
@@ -9847,6 +10453,9 @@
 =======
             "time": "2023-05-23T14:45:45+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-23T14:45:45+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -9892,10 +10501,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/service-contracts/tree/v3.0.2"
 =======
                 "source": "https://github.com/symfony/service-contracts/tree/v3.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/service-contracts/tree/v3.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -9915,6 +10528,7 @@
         },
         {
             "name": "symfony/string",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -9940,6 +10554,19 @@
                 "url": "https://api.github.com/repos/symfony/string/zipball/f2e190ee75ff0f5eced645ec0be5c66fac81f51f",
                 "reference": "f2e190ee75ff0f5eced645ec0be5c66fac81f51f",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/string.git",
+                "reference": "f2e190ee75ff0f5eced645ec0be5c66fac81f51f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/string/zipball/f2e190ee75ff0f5eced645ec0be5c66fac81f51f",
+                "reference": "f2e190ee75ff0f5eced645ec0be5c66fac81f51f",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -9960,10 +10587,14 @@
                 "symfony/var-exporter": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2023-01-01T08:36:10+00:00",
 =======
             "time": "2023-03-21T21:06:29+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-03-21T21:06:29+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -10003,10 +10634,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/string/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/string/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/string/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -10026,6 +10661,7 @@
         },
         {
             "name": "symfony/translation",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -10051,6 +10687,19 @@
                 "url": "https://api.github.com/repos/symfony/translation/zipball/f72b2cba8f79dd9d536f534f76874b58ad37876f",
                 "reference": "f72b2cba8f79dd9d536f534f76874b58ad37876f",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation.git",
+                "reference": "f72b2cba8f79dd9d536f534f76874b58ad37876f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/f72b2cba8f79dd9d536f534f76874b58ad37876f",
+                "reference": "f72b2cba8f79dd9d536f534f76874b58ad37876f",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
@@ -10087,6 +10736,7 @@
                 "symfony/yaml": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "psr/log-implementation": "To use logging capability in translator",
                 "symfony/config": "",
@@ -10096,6 +10746,9 @@
 =======
             "time": "2023-05-19T12:46:45+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-19T12:46:45+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -10127,10 +10780,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/translation/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/translation/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/translation/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -10150,6 +10807,7 @@
         },
         {
             "name": "symfony/translation-contracts",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v3.0.2",
             "version_normalized": "3.0.2.0",
@@ -10175,11 +10833,25 @@
                 "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/02c24deb352fb0d79db5486c0c79905a85e37e86",
                 "reference": "02c24deb352fb0d79db5486c0c79905a85e37e86",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "version": "v3.3.0",
+            "version_normalized": "3.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "02c24deb352fb0d79db5486c0c79905a85e37e86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/02c24deb352fb0d79db5486c0c79905a85e37e86",
+                "reference": "02c24deb352fb0d79db5486c0c79905a85e37e86",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             "suggest": {
                 "symfony/translation-implementation": ""
@@ -10188,6 +10860,9 @@
 =======
             "time": "2023-05-30T17:17:10+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-30T17:17:10+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -10233,10 +10908,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/translation-contracts/tree/v3.0.2"
 =======
                 "source": "https://github.com/symfony/translation-contracts/tree/v3.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/translation-contracts/tree/v3.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -10256,6 +10935,7 @@
         },
         {
             "name": "symfony/uid",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
@@ -10361,6 +11041,22 @@
                 "shasum": ""
             },
             "require": {
+=======
+            "version": "v6.3.0",
+            "version_normalized": "6.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/uid.git",
+                "reference": "01b0f20b1351d997711c56f1638f7a8c3061e384"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/uid/zipball/01b0f20b1351d997711c56f1638f7a8c3061e384",
+                "reference": "01b0f20b1351d997711c56f1638f7a8c3061e384",
+                "shasum": ""
+            },
+            "require": {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "php": ">=8.1",
                 "symfony/polyfill-uuid": "^1.15"
             },
@@ -10452,6 +11148,7 @@
                 "twig/twig": "^2.13|^3.0.4"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
                 "ext-intl": "To show region name in time zone dump",
@@ -10461,6 +11158,9 @@
 =======
             "time": "2023-05-25T13:09:35+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-05-25T13:09:35+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "bin": [
                 "Resources/bin/var-dump-server"
             ],
@@ -10499,10 +11199,14 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/var-dumper/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/var-dumper/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/var-dumper/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {
@@ -10523,6 +11227,7 @@
         {
             "name": "symfony/yaml",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "v6.0.19",
             "version_normalized": "6.0.19.0",
             "source": {
@@ -10539,6 +11244,8 @@
             "require": {
                 "php": ">=8.0.2",
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "version": "v6.3.0",
             "version_normalized": "6.3.0.0",
             "source": {
@@ -10554,7 +11261,10 @@
             },
             "require": {
                 "php": ">=8.1",
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -10564,6 +11274,7 @@
                 "symfony/console": "^5.4|^6.0"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "suggest": {
                 "symfony/console": "For validating YAML files using the lint command"
             },
@@ -10571,6 +11282,9 @@
 =======
             "time": "2023-04-28T13:28:14+00:00",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            "time": "2023-04-28T13:28:14+00:00",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             "bin": [
                 "Resources/bin/yaml-lint"
             ],
@@ -10602,10 +11316,14 @@
             "homepage": "https://symfony.com",
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/yaml/tree/v6.0.19"
 =======
                 "source": "https://github.com/symfony/yaml/tree/v6.3.0"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                "source": "https://github.com/symfony/yaml/tree/v6.3.0"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
             "funding": [
                 {

@@ -175,6 +175,7 @@ var rxEsc = /([.*+?^${}()|\[\]\/\\])/g,
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 refStyle.innerHTML = 'pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }';
 doc.head.appendChild(refStyle);
 refStyle = doc.createElement('style');
@@ -182,6 +183,8 @@ doc.head.appendChild(refStyle);
 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 if (!doc.addEventListener) {
     addEventListener = function (element, eventName, callback) {
         element.attachEvent('on' + eventName, function (e) {
@@ -433,9 +436,13 @@ return function (root, x) {
         } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) {
             a = a.slice(1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             elt.className += ' sf-dump-hover';
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            elt.className += ' sf-dump-hover';
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             elt.className += ' '+a;
 
             if (/[\[{]$/.test(elt.previousSibling.nodeValue)) {

@@ -24,10 +24,13 @@ use function rawurldecode;
 final class UriInfo
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     private const REGEXP_ENCODED_CHARS = ',%(2[D|E]|3[0-9]|4[1-9|A-F]|5[0-9|AF]|6[1-9|A-F]|7[0-9|E]),i';
 
     private const WHATWG_SPECIAL_SCHEMES = ['ftp' => 21, 'http' => 80, 'https' => 443, 'ws' => 80, 'wss' => 443];
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     private const REGEXP_ENCODED_CHARS = ',%(2[D|E]|3\d|4[1-9|A-F]|5[\d|A|F]|6[1-9|A-F]|7[\d|E]),i';
     private const WHATWG_SPECIAL_SCHEMES = ['ftp', 'http', 'https', 'ws', 'wss'];
 >>>>>>> 66597818 ( abdou a faire un poushe)
@@ -46,6 +49,7 @@ final class UriInfo
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Filter the URI object.
      *
@@ -84,6 +88,12 @@ final class UriInfo
         $uri = self::filterUri($uri);
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * Normalizes an URI for comparison.
+     */
+    private static function normalize(Psr7UriInterface|UriInterface $uri): Psr7UriInterface|UriInterface
+    {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $null = self::emptyComponentValue($uri);
 
         $path = $uri->getPath();
@@ -201,6 +211,18 @@ final class UriInfo
      * @param Psr7UriInterface|UriInterface $base_uri
      */
     public static function isCrossOrigin($uri, $base_uri): bool
+    {
+        return null === ($uriString = self::getOrigin(Uri::createFromUri($uri)))
+            || null === ($baseUriString = self::getOrigin(Uri::createFromUri($base_uri)))
+            || $uriString !== $baseUriString;
+    }
+
+    /**
+     * Tells whether two URI do not share the same origin.
+     *
+     * @see UriInfo::getOrigin()
+     */
+    public static function isCrossOrigin(Psr7UriInterface|UriInterface $uri, Psr7UriInterface|UriInterface $base_uri): bool
     {
         return null === ($uriString = self::getOrigin(Uri::createFromUri($uri)))
             || null === ($baseUriString = self::getOrigin(Uri::createFromUri($base_uri)))

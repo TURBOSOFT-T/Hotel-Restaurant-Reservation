@@ -72,9 +72,13 @@ abstract class AbstractSessionListener implements EventSubscriberInterface, Rese
                 if (!$sess) {
                     $sess = $this->getSession();
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     $request->setSession($sess);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                    $request->setSession($sess);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
                     /*
                      * For supporting sessions in php runtime with runners like roadrunner or swoole, the session
@@ -157,10 +161,14 @@ abstract class AbstractSessionListener implements EventSubscriberInterface, Rese
                 $requestSessionCookieId = $request->cookies->get($sessionName);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $isSessionEmpty = ($session instanceof Session ? $session->isEmpty() : empty($session->all())) && empty($_SESSION); // checking $_SESSION to keep compatibility with native sessions
 =======
                 $isSessionEmpty = ($session instanceof Session ? $session->isEmpty() : !$session->all()) && empty($_SESSION); // checking $_SESSION to keep compatibility with native sessions
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                $isSessionEmpty = ($session instanceof Session ? $session->isEmpty() : !$session->all()) && empty($_SESSION); // checking $_SESSION to keep compatibility with native sessions
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 if ($requestSessionCookieId && $isSessionEmpty) {
                     // PHP internally sets the session cookie value to "deleted" when setcookie() is called with empty string $value argument
                     // which happens in \Symfony\Component\HttpFoundation\Session\Storage\Handler\AbstractSessionHandler::destroy

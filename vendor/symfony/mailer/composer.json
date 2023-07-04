@@ -17,10 +17,14 @@
     ],
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": ">=8.0.2",
 =======
         "php": ">=8.1",
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        "php": ">=8.1",
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         "egulias/email-validator": "^2.1.10|^3|^4",
         "psr/event-dispatcher": "^1",
         "psr/log": "^1|^2|^3",

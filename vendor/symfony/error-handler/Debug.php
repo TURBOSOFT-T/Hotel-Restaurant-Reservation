@@ -25,10 +25,14 @@ class Debug
         if (!\in_array(\PHP_SAPI, ['cli', 'phpdbg'], true)) {
             ini_set('display_errors', 0);
 <<<<<<< HEAD
+<<<<<<< HEAD
         } elseif (!filter_var(\ini_get('log_errors'), \FILTER_VALIDATE_BOOLEAN) || \ini_get('error_log')) {
 =======
         } elseif (!filter_var(\ini_get('log_errors'), \FILTER_VALIDATE_BOOL) || \ini_get('error_log')) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        } elseif (!filter_var(\ini_get('log_errors'), \FILTER_VALIDATE_BOOL) || \ini_get('error_log')) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             // CLI - display errors only if they're not already logged to STDERR
             ini_set('display_errors', 1);
         }

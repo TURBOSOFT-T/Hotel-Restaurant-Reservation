@@ -75,6 +75,7 @@ final class CharacterStream
             $this->fixedWidth = match ($charset) {
                 // 16 bits
 <<<<<<< HEAD
+<<<<<<< HEAD
                 case 'ucs2':
                 case 'ucs-2':
                 case 'utf16':
@@ -112,6 +113,22 @@ final class CharacterStream
                 default => 1,
             };
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                'ucs2',
+                'ucs-2',
+                'utf16',
+                'utf-16' => 2,
+                // 32 bits
+                'ucs4',
+                'ucs-4',
+                'utf32',
+                'utf-32' => 4,
+                // 7-8 bit charsets: (us-)?ascii, (iso|iec)-?8859-?[0-9]+, windows-?125[0-9], cp-?[0-9]+, ansi, macintosh,
+                //                   koi-?7, koi-?8-?.+, mik, (cork|t1), v?iscii
+                // and fallback
+                default => 1,
+            };
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
         if (\is_resource($input)) {
             $blocks = 16372;

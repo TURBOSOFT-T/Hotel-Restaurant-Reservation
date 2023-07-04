@@ -25,10 +25,14 @@ class LocalComment implements CommentStrategy
     {
         if (!$lexer->isNextToken(EmailLexer::S_AT)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return new InvalidEmail(new ExpectingATEXT('ATEX is not expected after closing comments'), ((array) $lexer->token)['value']);
 =======
             return new InvalidEmail(new ExpectingATEXT('ATEX is not expected after closing comments'), $lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            return new InvalidEmail(new ExpectingATEXT('ATEX is not expected after closing comments'), $lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
         $this->warnings[CFWSNearAt::CODE] = new CFWSNearAt();
         return new ValidEmail();

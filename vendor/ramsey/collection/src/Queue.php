@@ -36,6 +36,7 @@ class Queue extends AbstractArray implements QueueInterface
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * The type of elements stored in this queue.
      *
      * A queue's type is immutable once it is set. For this reason, this
@@ -51,6 +52,8 @@ class Queue extends AbstractArray implements QueueInterface
     /**
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * Constructs a queue object of the specified type, optionally with the
      * specified data.
      *
@@ -70,10 +73,14 @@ class Queue extends AbstractArray implements QueueInterface
      * invoked by other operations when adding values to the queue.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @throws InvalidArgumentException if $value is of the wrong type
 =======
      * @throws InvalidArgumentException if $value is of the wrong type.
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @throws InvalidArgumentException if $value is of the wrong type.
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function offsetSet(mixed $offset, mixed $value): void
     {
@@ -89,12 +96,16 @@ class Queue extends AbstractArray implements QueueInterface
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @throws InvalidArgumentException if $value is of the wrong type
      *
      * @inheritDoc
 =======
      * @throws InvalidArgumentException if $value is of the wrong type.
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @throws InvalidArgumentException if $value is of the wrong type.
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function add(mixed $element): bool
     {
@@ -111,6 +122,7 @@ class Queue extends AbstractArray implements QueueInterface
     public function element(): mixed
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $element = $this->peek();
 
         if ($element === null) {
@@ -125,6 +137,11 @@ class Queue extends AbstractArray implements QueueInterface
             'Can\'t return element from Queue. Queue is empty.',
         );
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->peek() ?? throw new NoSuchElementException(
+            'Can\'t return element from Queue. Queue is empty.',
+        );
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     public function offer(mixed $element): bool

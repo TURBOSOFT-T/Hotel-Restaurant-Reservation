@@ -18,10 +18,14 @@ use League\Uri\Exceptions\IdnSupportMissing;
 use League\Uri\Exceptions\SyntaxError;
 use League\Uri\Idna\Idna;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use TypeError;
 =======
 use Stringable;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use Stringable;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 use function array_merge;
 use function explode;
 use function filter_var;
@@ -158,6 +162,7 @@ final class UriString
      * @link https://tools.ietf.org/html/rfc3986#section-7.5
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array{
      *  scheme:?string,
      *  user:?string,
@@ -171,6 +176,9 @@ final class UriString
 =======
      * @param array{scheme:?string, user:?string, pass:?string, host:?string, port:?int, path:?string, query:?string, fragment:?string} $components
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @param array{scheme:?string, user:?string, pass:?string, host:?string, port:?int, path:?string, query:?string, fragment:?string} $components
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public static function build(array $components): string
     {
@@ -257,6 +265,7 @@ final class UriString
     public static function parse(Stringable|string|int|float $uri): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (is_object($uri) && method_exists($uri, '__toString')) {
             $uri = (string) $uri;
         }
@@ -267,6 +276,8 @@ final class UriString
 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $uri = (string) $uri;
         if (isset(self::URI_SCHORTCUTS[$uri])) {
             /** @var array{scheme:?string, user:?string, pass:?string, host:?string, port:?int, path:string, query:?string, fragment:?string} $components */

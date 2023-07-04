@@ -79,9 +79,13 @@ class JWT
      *                                                                      'HS256', 'HS384', 'HS512', 'RS256', 'RS384'
      *                                                                      and 'RS512'.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @param stdClass               $headers                               Optional. Populates stdClass with headers.
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @param stdClass               $headers                               Optional. Populates stdClass with headers.
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      *
      * @return stdClass The JWT's payload as a PHP object
      *

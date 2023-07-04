@@ -147,10 +147,14 @@ final class SocketStream extends AbstractStream
         }
         // do it unconditionally as it will be used by STARTTLS as well if supported
 <<<<<<< HEAD
+<<<<<<< HEAD
         $options['ssl']['crypto_method'] = $options['ssl']['crypto_method'] ?? \STREAM_CRYPTO_METHOD_TLS_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT;
 =======
         $options['ssl']['crypto_method'] ??= \STREAM_CRYPTO_METHOD_TLS_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $options['ssl']['crypto_method'] ??= \STREAM_CRYPTO_METHOD_TLS_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT | \STREAM_CRYPTO_METHOD_TLSv1_1_CLIENT;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $streamContext = stream_context_create($options);
 
         $timeout = $this->getTimeout();

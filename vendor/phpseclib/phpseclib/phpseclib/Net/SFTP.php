@@ -392,6 +392,7 @@ class SFTP extends SSH2
                 105 => 'NET_SFTP_ATTRS',
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             200 => 'NET_SFTP_EXTENDED'
         ];
         $this->status_codes = [
@@ -513,6 +514,8 @@ class SFTP extends SSH2
             $this->file_types
         );
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 200 => 'NET_SFTP_EXTENDED'
             ];
             self::$status_codes = [
@@ -634,7 +637,10 @@ class SFTP extends SSH2
                 self::$file_types
             );
         }
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         if (!defined('NET_SFTP_QUEUE_SIZE')) {
             define('NET_SFTP_QUEUE_SIZE', 32);
@@ -3555,10 +3561,14 @@ class SFTP extends SSH2
      * Returns a string if NET_SFTP_LOGGING == self::LOG_COMPLEX, an array if NET_SFTP_LOGGING == self::LOG_SIMPLE and false if !defined('NET_SFTP_LOGGING')
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array|string
 =======
      * @return array|string|false
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @return array|string|false
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function getSFTPLog()
     {

@@ -51,17 +51,23 @@ class HtmlErrorRenderer implements ErrorRendererInterface
     public function __construct(bool|callable $debug = false, string $charset = null, string|FileLinkFormatter $fileLinkFormat = null, string $projectDir = null, string|callable $outputBuffer = '', LoggerInterface $logger = null)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->debug = \is_bool($debug) || $debug instanceof \Closure ? $debug : \Closure::fromCallable($debug);
         $this->charset = $charset ?: (\ini_get('default_charset') ?: 'UTF-8');
         $this->fileLinkFormat = $fileLinkFormat ?: (\ini_get('xdebug.file_link_format') ?: get_cfg_var('xdebug.file_link_format'));
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $this->debug = \is_bool($debug) ? $debug : $debug(...);
         $this->charset = $charset ?: (\ini_get('default_charset') ?: 'UTF-8');
         $fileLinkFormat ??= $_ENV['SYMFONY_IDE'] ?? $_SERVER['SYMFONY_IDE'] ?? null;
         $this->fileLinkFormat = \is_string($fileLinkFormat)
             ? (ErrorRendererInterface::IDE_LINK_FORMATS[$fileLinkFormat] ?? $fileLinkFormat ?: false)
             : ($fileLinkFormat ?: \ini_get('xdebug.file_link_format') ?: get_cfg_var('xdebug.file_link_format') ?: false);
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $this->projectDir = $projectDir;
         $this->outputBuffer = \is_string($outputBuffer) ? $outputBuffer : $outputBuffer(...);
         $this->logger = $logger;

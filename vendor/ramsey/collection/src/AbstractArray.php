@@ -19,10 +19,13 @@ use Traversable;
 
 use function count;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function serialize;
 use function unserialize;
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
 /**
  * This class provides a basic implementation of `ArrayInterface`, to minimize

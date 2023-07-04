@@ -157,7 +157,10 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
 
                     if (Request::class === $type || SessionInterface::class === $type || Response::class === $type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                         continue;
                     }
 
@@ -173,7 +176,10 @@ class RegisterControllerArgumentLocatorsPass implements CompilerPassInterface
                                 ->addArgument([$value]);
                         }
 
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                         continue;
                     }
 

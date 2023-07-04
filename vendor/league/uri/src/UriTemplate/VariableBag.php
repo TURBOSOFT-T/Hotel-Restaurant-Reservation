@@ -17,12 +17,16 @@ use ArrayAccess;
 use Countable;
 use League\Uri\Exceptions\TemplateCanNotBeExpanded;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use TypeError;
 use function gettype;
 use function is_array;
 =======
 use Stringable;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use Stringable;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 use function is_bool;
 use function is_object;
 use function is_scalar;
@@ -108,10 +112,14 @@ final class VariableBag implements ArrayAccess, Countable
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string|bool|int|float|array<string|bool|int|float> $value
 =======
      * @param string|bool|int|float|null|array<string|bool|int|float> $value
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @param string|bool|int|float|null|array<string|bool|int|float> $value
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function assign(string $name, string|bool|int|float|array|null $value): void
     {
@@ -125,6 +133,7 @@ final class VariableBag implements ArrayAccess, Countable
      */
     private function normalizeValue(Stringable|array|string|float|int|bool|null $value, string $name, bool $isNestedListAllowed): array|string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (is_bool($value)) {
             return true === $value ? '1' : '0';
@@ -149,13 +158,18 @@ final class VariableBag implements ArrayAccess, Countable
 
         return $value;
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         return match (true) {
             is_bool($value) => true === $value ? '1' : '0',
             (null === $value || is_scalar($value) || is_object($value)) => (string) $value,
             !$isNestedListAllowed => throw TemplateCanNotBeExpanded::dueToNestedListOfValue($name),
             default => array_map(fn ($var): array|string => self::normalizeValue($var, $name, false), $value),
         };
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

@@ -180,6 +180,7 @@ class Base
      * Returns randomly ordered subsequence of $count elements from a provided array
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array|class-string|\Traversable $array           Array to take elements from. Defaults to a-c
      * @param int                             $count           Number of elements to take.
      * @param bool                            $allowDuplicates Allow elements to be picked several times. Defaults to false
@@ -187,11 +188,18 @@ class Base
 =======
      * @todo update default $count to `null` (BC) for next major version
      *
+=======
+     * @todo update default $count to `null` (BC) for next major version
+     *
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @param array|class-string|\Traversable $array           Array to take elements from. Defaults to a-c
      * @param int|null                        $count           Number of elements to take. If `null` then returns random number of elements
      * @param bool                            $allowDuplicates Allow elements to be picked several times. Defaults to false
      *
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @throws \InvalidArgumentException
      * @throws \LengthException          When requesting more elements than provided
      *
@@ -221,10 +229,14 @@ class Base
         $numberOfElements = count($elements);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$allowDuplicates && $numberOfElements < $count) {
 =======
         if (!$allowDuplicates && null !== $count && $numberOfElements < $count) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (!$allowDuplicates && null !== $count && $numberOfElements < $count) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             throw new \LengthException(sprintf(
                 'Cannot get %d elements, only %d in array',
                 $count,
@@ -233,12 +245,18 @@ class Base
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         if (null === $count) {
             $count = mt_rand(1, $numberOfElements);
         }
 
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $randomElements = [];
 
         $keys = array_keys($elements);

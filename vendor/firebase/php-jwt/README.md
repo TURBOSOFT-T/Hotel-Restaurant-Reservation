@@ -74,12 +74,17 @@ Decoding the JWT headers without verifying the JWT first is NOT recommended, and
 this library. This is because without verifying the JWT, the header values could have been tampered with.
 Any value pulled from an unverified header should be treated as if it could be any string sent in from an
 <<<<<<< HEAD
+<<<<<<< HEAD
 attacker.  If this is something you still want to do in your application for whatever reason, it's possible to 
 decode the header values manually simply by calling `json_decode` and `base64_decode` on the JWT 
 =======
 attacker.  If this is something you still want to do in your application for whatever reason, it's possible to
 decode the header values manually simply by calling `json_decode` and `base64_decode` on the JWT
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+attacker.  If this is something you still want to do in your application for whatever reason, it's possible to
+decode the header values manually simply by calling `json_decode` and `base64_decode` on the JWT
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 header part:
 ```php
 use Firebase\JWT\JWT;
@@ -382,10 +387,15 @@ like this:
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Firebase\JWT\JWT;
 use UnexpectedValueException;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use Firebase\JWT\JWT;
+use UnexpectedValueException;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 try {
     $decoded = JWT::decode($payload, $keys);
 } catch (LogicException $e) {

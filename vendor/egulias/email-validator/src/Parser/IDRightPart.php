@@ -22,12 +22,17 @@ class IDRightPart extends DomainPart
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (isset($invalidDomainTokens[((array) $this->lexer->token)['type']])) {
             return new InvalidEmail(new ExpectingATEXT('Invalid token in domain: ' . ((array) $this->lexer->token)['value']), ((array) $this->lexer->token)['value']);
 =======
         if (isset($invalidDomainTokens[$this->lexer->current->type])) {
             return new InvalidEmail(new ExpectingATEXT('Invalid token in domain: ' . $this->lexer->current->value), $this->lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (isset($invalidDomainTokens[$this->lexer->current->type])) {
+            return new InvalidEmail(new ExpectingATEXT('Invalid token in domain: ' . $this->lexer->current->value), $this->lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
         return new ValidEmail();
     }

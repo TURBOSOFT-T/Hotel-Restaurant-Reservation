@@ -87,10 +87,14 @@ abstract class AbstractSessionHandler implements \SessionHandlerInterface, \Sess
     public function destroy(#[\SensitiveParameter] string $sessionId): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!headers_sent() && filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOLEAN)) {
 =======
         if (!headers_sent() && filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOL)) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (!headers_sent() && filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOL)) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             if (!isset($this->sessionName)) {
                 throw new \LogicException(sprintf('Session name cannot be empty, did you forget to call "parent::open()" in "%s"?.', static::class));
             }

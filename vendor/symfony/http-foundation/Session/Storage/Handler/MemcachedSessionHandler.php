@@ -75,10 +75,14 @@ class MemcachedSessionHandler extends AbstractSessionHandler
     {
         return $this->memcached->set($this->prefix.$sessionId, $data, $this->getCompatibleTtl());
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     private function getCompatibleTtl(): int
     {
+<<<<<<< HEAD
         $ttl = (int) ($this->ttl ?? \ini_get('session.gc_maxlifetime'));
 
         // If the relative TTL that is used exceeds 30 days, memcached will treat the value as Unix time.
@@ -94,6 +98,8 @@ class MemcachedSessionHandler extends AbstractSessionHandler
 
     private function getCompatibleTtl(): int
     {
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $ttl = ($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime');
 
         // If the relative TTL that is used exceeds 30 days, memcached will treat the value as Unix time.

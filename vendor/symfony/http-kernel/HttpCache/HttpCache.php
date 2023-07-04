@@ -740,10 +740,14 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
         $ttl = $maxAge - $age;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return abs($entry->getTtl() ?? 0) < $timeout;
 =======
         return abs($ttl) < $timeout;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return abs($ttl) < $timeout;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

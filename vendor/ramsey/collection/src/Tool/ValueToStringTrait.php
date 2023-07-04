@@ -47,11 +47,15 @@ trait ValueToStringTrait
      * @param mixed $value the value to return as a string.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     // phpcs:ignore SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint
     protected function toolValueToString($value): string
 =======
     protected function toolValueToString(mixed $value): string
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    protected function toolValueToString(mixed $value): string
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         // null
         if ($value === null) {
@@ -93,10 +97,14 @@ trait ValueToStringTrait
 
         // unknown type
 <<<<<<< HEAD
+<<<<<<< HEAD
         // phpcs:ignore SlevomatCodingStandard.Classes.ModernClassNameReference.ClassNameReferencedViaFunctionCall
         return '(' . get_class($value) . ' Object)';
 =======
         return '(' . $value::class . ' Object)';
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return '(' . $value::class . ' Object)';
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 }

@@ -156,12 +156,18 @@ abstract class AbstractUnicodeString extends AbstractString
     {
         $str = clone $this;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $str->string = str_replace(' ', '', preg_replace_callback('/\b.(?![A-Z]{2,})/u', static function ($m) use (&$i) {
 =======
         $str->string = str_replace(' ', '', preg_replace_callback('/\b.(?![A-Z]{2,})/u', static function ($m) {
             static $i = 0;
 
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $str->string = str_replace(' ', '', preg_replace_callback('/\b.(?![A-Z]{2,})/u', static function ($m) {
+            static $i = 0;
+
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             return 1 === ++$i ? ('İ' === $m[0] ? 'i̇' : mb_strtolower($m[0], 'UTF-8')) : mb_convert_case($m[0], \MB_CASE_TITLE, 'UTF-8');
         }, preg_replace('/[^\pL0-9]++/u', ' ', $this->string)));
 

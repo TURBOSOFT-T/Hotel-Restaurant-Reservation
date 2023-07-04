@@ -32,6 +32,7 @@ final class Instantiator implements InstantiatorInterface
      * @deprecated This constant will be private in 2.0
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public const SERIALIZATION_FORMAT_USE_UNSERIALIZER = 'C';
 
     /** @deprecated This constant will be private in 2.0 */
@@ -40,6 +41,10 @@ final class Instantiator implements InstantiatorInterface
     private const SERIALIZATION_FORMAT_USE_UNSERIALIZER   = 'C';
     private const SERIALIZATION_FORMAT_AVOID_UNSERIALIZER = 'O';
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private const SERIALIZATION_FORMAT_USE_UNSERIALIZER   = 'C';
+    private const SERIALIZATION_FORMAT_AVOID_UNSERIALIZER = 'O';
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
     /**
      * Used to instantiate specific classes, indexed by class name.

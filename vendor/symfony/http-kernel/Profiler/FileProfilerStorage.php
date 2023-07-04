@@ -298,7 +298,10 @@ class FileProfilerStorage implements ProfilerStorageInterface
         return $this->createProfileFromData($token, $data, $profile);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
     private function removeExpiredProfiles(): void
     {
@@ -324,5 +327,8 @@ class FileProfilerStorage implements ProfilerStorageInterface
 
         file_put_contents($file.'.offset', $offset);
     }
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 }

@@ -332,10 +332,14 @@ class PdoSessionHandler extends AbstractSessionHandler
     protected function doWrite(#[\SensitiveParameter] string $sessionId, string $data): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $maxlifetime = (int) \ini_get('session.gc_maxlifetime');
 =======
         $maxlifetime = (int) (($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime'));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $maxlifetime = (int) (($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime'));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         try {
             // We use a single MERGE SQL query when supported by the database.
@@ -379,10 +383,14 @@ class PdoSessionHandler extends AbstractSessionHandler
     public function updateTimestamp(#[\SensitiveParameter] string $sessionId, string $data): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $expiry = time() + (int) \ini_get('session.gc_maxlifetime');
 =======
         $expiry = time() + (int) (($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime'));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $expiry = time() + (int) (($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime'));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         try {
             $updateStmt = $this->pdo->prepare(
@@ -657,10 +665,14 @@ class PdoSessionHandler extends AbstractSessionHandler
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!filter_var(\ini_get('session.use_strict_mode'), \FILTER_VALIDATE_BOOLEAN) && self::LOCK_TRANSACTIONAL === $this->lockMode && 'sqlite' !== $this->driver) {
 =======
             if (!filter_var(\ini_get('session.use_strict_mode'), \FILTER_VALIDATE_BOOL) && self::LOCK_TRANSACTIONAL === $this->lockMode && 'sqlite' !== $this->driver) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            if (!filter_var(\ini_get('session.use_strict_mode'), \FILTER_VALIDATE_BOOL) && self::LOCK_TRANSACTIONAL === $this->lockMode && 'sqlite' !== $this->driver) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 // In strict mode, session fixation is not possible: new sessions always start with a unique
                 // random id, so that concurrency is not possible and this code path can be skipped.
                 // Exclusive-reading of non-existent rows does not block, so we need to do an insert to block

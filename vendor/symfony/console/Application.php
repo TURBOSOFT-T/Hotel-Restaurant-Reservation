@@ -306,6 +306,7 @@ class Application implements ResetInterface
                     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $style = new SymfonyStyle($input, $output);
             $output->writeln('');
             $formattedBlock = (new FormatterHelper())->formatBlock(sprintf('Command "%s" is not defined.', $name), 'error', true);
@@ -321,6 +322,11 @@ class Application implements ResetInterface
                 } catch (NamespaceNotFoundException) {
                     throw $e;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                    throw $e;
+                } catch (NamespaceNotFoundException) {
+                    throw $e;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 }
             }
         }
@@ -394,14 +400,18 @@ class Application implements ResetInterface
             && 'command' === $input->getCompletionName()
         ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $commandNames = [];
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             foreach ($this->all() as $name => $command) {
                 // skip hidden commands and aliased commands as they already get added below
                 if ($command->isHidden() || $command->getName() !== $name) {
                     continue;
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $commandNames[] = $command->getName();
                 foreach ($command->getAliases() as $name) {
@@ -410,12 +420,17 @@ class Application implements ResetInterface
             }
             $suggestions->suggestValues(array_filter($commandNames));
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $suggestions->suggestValue(new Suggestion($command->getName(), $command->getDescription()));
                 foreach ($command->getAliases() as $name) {
                     $suggestions->suggestValue(new Suggestion($name, $command->getDescription()));
                 }
             }
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
             return;
         }
@@ -1027,13 +1042,17 @@ class Application implements ResetInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->signalsToDispatchEvent) {
             $commandSignals = $command instanceof SignalableCommandInterface ? $command->getSubscribedSignals() : [];
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $commandSignals = $command instanceof SignalableCommandInterface ? $command->getSubscribedSignals() : [];
         if ($commandSignals || $this->dispatcher && $this->signalsToDispatchEvent) {
             if (!$this->signalRegistry) {
                 throw new RuntimeException('Unable to subscribe to signal events. Make sure that the "pcntl" extension is installed and that "pcntl_*" functions are not disabled by your php.ini\'s "disable_functions" directive.');
+<<<<<<< HEAD
             }
 >>>>>>> 66597818 ( abdou a faire un poushe)
 
@@ -1052,6 +1071,8 @@ class Application implements ResetInterface
                         });
                     }
                 }
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             if (null !== $this->dispatcher) {
@@ -1063,7 +1084,10 @@ class Application implements ResetInterface
 
             if ($this->dispatcher) {
                 // We register application signals, so that we can dispatch the event
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 foreach ($this->signalsToDispatchEvent as $signal) {
                     $event = new ConsoleSignalEvent($command, $input, $output, $signal);
 
@@ -1093,8 +1117,11 @@ class Application implements ResetInterface
 
             foreach ($commandSignals as $signal) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $this->signalRegistry->register($signal, [$command, 'handleSignal']);
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $this->signalRegistry->register($signal, function (int $signal) use ($command): void {
                     $exitCode = $command->handleSignal($signal);
                     // BC layer for Symfony <= 5
@@ -1107,7 +1134,10 @@ class Application implements ResetInterface
                         exit($exitCode);
                     }
                 });
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
         }
 

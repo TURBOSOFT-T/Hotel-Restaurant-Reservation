@@ -807,10 +807,14 @@ class DebugClassLoader
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($nullable = 0 === strpos($types, 'null|')) {
 =======
         if ($nullable = str_starts_with($types, 'null|')) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if ($nullable = str_starts_with($types, 'null|')) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             $types = substr($types, 5);
         } elseif ($nullable = str_ends_with($types, '|null')) {
             $types = substr($types, 0, -5);

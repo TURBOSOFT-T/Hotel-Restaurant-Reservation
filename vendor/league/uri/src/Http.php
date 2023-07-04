@@ -23,12 +23,16 @@ use function is_scalar;
 final class Http implements Psr7UriInterface, JsonSerializable
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     private UriInterface $uri;
 
     private function __construct(UriInterface $uri)
 =======
     private function __construct(private readonly UriInterface $uri)
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private function __construct(private readonly UriInterface $uri)
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         $this->validate($this->uri);
     }
@@ -177,6 +181,7 @@ final class Http implements Psr7UriInterface, JsonSerializable
      * {@inheritDoc}
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function withScheme($scheme): self
     {
         /** @var string $scheme */
@@ -318,6 +323,8 @@ final class Http implements Psr7UriInterface, JsonSerializable
      */
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     public function __toString(): string
     {
         return $this->uri->__toString();

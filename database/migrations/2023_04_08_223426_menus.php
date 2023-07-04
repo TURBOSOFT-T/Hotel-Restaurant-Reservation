@@ -18,7 +18,13 @@ return new class extends Migration
             $table->string('libelle');
             $table->string('description');
             $table->string('prix');
+<<<<<<< HEAD
             
+=======
+            $table->string('image');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             $table->timestamps();
         });
     }
@@ -30,6 +36,15 @@ return new class extends Migration
      */
     public function down()
     {
+<<<<<<< HEAD
         Schema::dropIfExists('menus');
     }
 };
+=======
+        Schema::table('menus', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropColumn('user_id');
+        });
+}
+};
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa

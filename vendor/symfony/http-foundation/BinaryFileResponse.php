@@ -35,10 +35,14 @@ class BinaryFileResponse extends Response
     protected $maxlen = -1;
     protected $deleteFileAfterSend = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $chunkSize = 8 * 1024;
 =======
     protected $chunkSize = 16 * 1024;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    protected $chunkSize = 16 * 1024;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
     /**
      * @param \SplFileInfo|string $file               The file to stream
@@ -316,6 +320,7 @@ class BinaryFileResponse extends Response
             $length = $this->maxlen;
             while ($length && !feof($file)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $read = ($length > $this->chunkSize) ? $this->chunkSize : $length;
                 $length -= $read;
 
@@ -325,6 +330,8 @@ class BinaryFileResponse extends Response
                     break;
                 }
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $read = $length > $this->chunkSize || 0 > $length ? $this->chunkSize : $length;
 
                 if (false === $data = fread($file, $read)) {
@@ -340,7 +347,10 @@ class BinaryFileResponse extends Response
                     }
                     $data = substr($data, $read);
                 }
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             fclose($out);

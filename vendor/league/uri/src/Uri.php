@@ -22,10 +22,15 @@ use League\Uri\Exceptions\SyntaxError;
 use League\Uri\Idna\Idna;
 use Psr\Http\Message\UriInterface as Psr7UriInterface;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use SensitiveParameter;
 use Stringable;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use SensitiveParameter;
+use Stringable;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 use TypeError;
 use function array_filter;
 use function array_key_first;
@@ -186,10 +191,14 @@ final class Uri implements UriInterface
      * Maximum number of formatted host cached.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<string>
 =======
      * @var int
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @var int
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     private const MAXIMUM_FORMATTED_HOST_CACHED = 100;
 
@@ -206,10 +215,14 @@ final class Uri implements UriInterface
     private ?int $port;
     private ?string $authority;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string $path = '';
 =======
     private string $path;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private string $path;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     private ?string $query;
     private ?string $fragment;
     private ?string $uri;
@@ -240,9 +253,12 @@ final class Uri implements UriInterface
      * Format the Scheme and Host component.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  ?string     $scheme
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @throws SyntaxError if the scheme is invalid
      */
     private function formatScheme(?string $scheme): ?string
@@ -262,10 +278,13 @@ final class Uri implements UriInterface
     /**
      * Set the UserInfo component.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param ?string $user
      * @param ?string $password
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     private function formatUserInfo(
         ?string $user,
@@ -297,9 +316,12 @@ final class Uri implements UriInterface
     /**
      * Validate and Format the Host component.
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param ?string $host
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     private function formatHost(?string $host): ?string
     {
@@ -391,10 +413,13 @@ final class Uri implements UriInterface
      * Format the Port component.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param object|null|int|string $port
      *
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @throws SyntaxError
      */
     private function formatPort(Stringable|string|int|null $port = null): ?int
@@ -633,12 +658,15 @@ final class Uri implements UriInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$uri instanceof Psr7UriInterface) {
             throw new TypeError(sprintf('The object must implement the `%s` or the `%s`', Psr7UriInterface::class, UriInterface::class));
         }
 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         $scheme = $uri->getScheme();
         if ('' === $scheme) {
             $scheme = null;
@@ -1161,10 +1189,14 @@ final class Uri implements UriInterface
     public function getPath(): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (0 === strpos($this->path, '//')) {
 =======
         if (str_starts_with($this->path, '//')) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (str_starts_with($this->path, '//')) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             return '/'.ltrim($this->path, '/');
         }
 
@@ -1220,6 +1252,7 @@ final class Uri implements UriInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (is_object($str) && method_exists($str, '__toString')) {
             $str = (string) $str;
         }
@@ -1230,6 +1263,10 @@ final class Uri implements UriInterface
         if (!is_scalar($str) && !$str instanceof Stringable) {
             throw new SyntaxError('The component must be a string, a scalar or a Stringable object; `'.gettype($str).'` given.');
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (!is_scalar($str) && !$str instanceof Stringable) {
+            throw new SyntaxError('The component must be a string, a scalar or a Stringable object; `'.gettype($str).'` given.');
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
 
         $str = (string) $str;

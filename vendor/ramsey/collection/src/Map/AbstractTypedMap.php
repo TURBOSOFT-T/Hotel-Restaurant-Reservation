@@ -40,12 +40,16 @@ abstract class AbstractTypedMap extends AbstractMap implements TypedMapInterface
      *
      * @inheritDoc
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @psalm-suppress MoreSpecificImplementedParamType
 >>>>>>> 66597818 ( abdou a faire un poushe)
      */
     public function offsetSet(mixed $offset, mixed $value): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($offset === null) {
             throw new InvalidArgumentException(
@@ -56,6 +60,8 @@ abstract class AbstractTypedMap extends AbstractMap implements TypedMapInterface
 
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         if ($this->checkType($this->getKeyType(), $offset) === false) {
             throw new InvalidArgumentException(
                 'Key must be of type ' . $this->getKeyType() . '; key is '

@@ -52,6 +52,7 @@ class DataPart extends TextPart
     public static function fromPath(string $path, string $name = null, string $contentType = null): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $contentType) {
             $ext = strtolower(substr($path, strrpos($path, '.') + 1));
             if (null === self::$mimeTypes) {
@@ -81,6 +82,9 @@ class DataPart extends TextPart
 =======
         return new self(new File($path), $name, $contentType);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return new self(new File($path), $name, $contentType);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

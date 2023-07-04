@@ -24,6 +24,7 @@ final class ArgumentMetadataFactory implements ArgumentMetadataFactoryInterface
         $reflector ??= new \ReflectionFunction($controller(...));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (\is_array($controller)) {
             $reflection = new \ReflectionMethod($controller[0], $controller[1]);
             $class = $reflection->class;
@@ -41,6 +42,9 @@ final class ArgumentMetadataFactory implements ArgumentMetadataFactoryInterface
 =======
         foreach ($reflector->getParameters() as $param) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        foreach ($reflector->getParameters() as $param) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             $attributes = [];
             foreach ($param->getAttributes() as $reflectionAttribute) {
                 if (class_exists($reflectionAttribute->getName())) {

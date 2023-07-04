@@ -61,6 +61,7 @@ class DebugHandlersListener implements EventSubscriberInterface
         $this->firstCall = $this->hasTerminatedWithException = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $handler = set_exception_handler('is_int');
         $handler = \is_array($handler) ? $handler[0] : null;
         restore_exception_handler();
@@ -97,6 +98,8 @@ class DebugHandlersListener implements EventSubscriberInterface
         }
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         if (!$this->exceptionHandler) {
             if ($event instanceof KernelEvent) {
                 if (method_exists($kernel = $event->getKernel(), 'terminateWithException')) {

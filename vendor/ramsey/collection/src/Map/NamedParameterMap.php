@@ -40,10 +40,14 @@ class NamedParameterMap extends AbstractMap
      * @var array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected array $namedParameters;
 =======
     private readonly array $namedParameters;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private readonly array $namedParameters;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
     /**
      * Constructs a new `NamedParameterMap`.
@@ -70,6 +74,7 @@ class NamedParameterMap extends AbstractMap
     public function offsetSet(mixed $offset, mixed $value): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($offset === null) {
             throw new InvalidArgumentException(
                 'Map elements are key/value pairs; a key must be provided for '
@@ -87,6 +92,12 @@ class NamedParameterMap extends AbstractMap
                 'Attempting to set value for unconfigured parameter \''
                 . $this->toolValueToString($offset) . '\'',
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (!array_key_exists($offset, $this->namedParameters)) {
+            throw new InvalidArgumentException(
+                'Attempting to set value for unconfigured parameter \''
+                . $this->toolValueToString($offset) . '\'',
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             );
         }
 

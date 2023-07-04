@@ -74,9 +74,13 @@ abstract class Parser
         $this->lexer->moveNext();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return ((array) $this->lexer->token)['type'] !== EmailLexer::S_AT;
 =======
         return !$this->lexer->current->isA(EmailLexer::S_AT);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return !$this->lexer->current->isA(EmailLexer::S_AT);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 }

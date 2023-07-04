@@ -47,12 +47,17 @@ abstract class PartParser
     protected function checkConsecutiveDots(): Result
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (((array) $this->lexer->token)['type'] === EmailLexer::S_DOT && $this->lexer->isNextToken(EmailLexer::S_DOT)) {
             return new InvalidEmail(new ConsecutiveDot(), ((array) $this->lexer->token)['value']);
 =======
         if ($this->lexer->current->isA(EmailLexer::S_DOT) && $this->lexer->isNextToken(EmailLexer::S_DOT)) {
             return new InvalidEmail(new ConsecutiveDot(), $this->lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if ($this->lexer->current->isA(EmailLexer::S_DOT) && $this->lexer->isNextToken(EmailLexer::S_DOT)) {
+            return new InvalidEmail(new ConsecutiveDot(), $this->lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
 
         return new ValidEmail();
@@ -63,6 +68,7 @@ abstract class PartParser
         $previous = $this->lexer->getPrevious();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $previous && $previous['type'] === EmailLexer::S_BACKSLASH
             &&
             ((array) $this->lexer->token)['type'] !== EmailLexer::GENERIC;
@@ -70,5 +76,9 @@ abstract class PartParser
         return $previous->isA(EmailLexer::S_BACKSLASH)
             && !$this->lexer->current->isA(EmailLexer::GENERIC);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $previous->isA(EmailLexer::S_BACKSLASH)
+            && !$this->lexer->current->isA(EmailLexer::GENERIC);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 }

@@ -36,10 +36,14 @@ _sf_{{ COMMAND_NAME }}() {
     _get_comp_words_by_ref -n := cur prev words cword
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     local completecmd=("$sf_cmd" "_complete" "--no-interaction" "-sbash" "-c$cword" "-S{{ VERSION }}")
 =======
     local completecmd=("$sf_cmd" "_complete" "--no-interaction" "-sbash" "-c$cword" "-a{{ VERSION }}")
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    local completecmd=("$sf_cmd" "_complete" "--no-interaction" "-sbash" "-c$cword" "-a{{ VERSION }}")
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     for w in ${words[@]}; do
         w=$(printf -- '%b' "$w")
         # remove quotes from typed values

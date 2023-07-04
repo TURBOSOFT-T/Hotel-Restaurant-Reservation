@@ -22,10 +22,15 @@ class DNSCheckValidation implements EmailValidation
      * Reserved Top Level DNS Names (https://tools.ietf.org/html/rfc2606#section-2),
      * mDNS and private DNS Namespaces (https://tools.ietf.org/html/rfc6762#appendix-G)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * 
      * @var string[]
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * 
+     * @var string[]
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public const RESERVED_DNS_TOP_LEVEL_NAMES = [
         // Reserved Top Level DNS Names
@@ -46,6 +51,7 @@ class DNSCheckValidation implements EmailValidation
         'lan',
     ];
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     /**
      * @var array
@@ -54,6 +60,11 @@ class DNSCheckValidation implements EmailValidation
     /**
      * @var Warning[]
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+
+    /**
+     * @var Warning[]
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     private $warnings = [];
 

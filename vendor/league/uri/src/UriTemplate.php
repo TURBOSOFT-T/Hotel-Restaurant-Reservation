@@ -20,10 +20,14 @@ use League\Uri\Exceptions\TemplateCanNotBeExpanded;
 use League\Uri\UriTemplate\Template;
 use League\Uri\UriTemplate\VariableBag;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use TypeError;
 =======
 use Stringable;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+use Stringable;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
 /**
  * Defines the URI Template syntax and the process for expanding a URI Template into a URI reference.
@@ -39,6 +43,7 @@ use Stringable;
 final class UriTemplate
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Template $template;
     private VariableBag $defaultVariables;
 
@@ -47,11 +52,16 @@ final class UriTemplate
      *
      * @throws TypeError                if the template is not a string or an object with the __toString method
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     public readonly Template $template;
     public readonly VariableBag $defaultVariables;
 
     /**
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * @throws SyntaxError              if the template syntax is invalid
      * @throws TemplateCanNotBeExpanded if the template variables are invalid
      */
@@ -128,6 +138,7 @@ final class UriTemplate
     public function withDefaultVariables(VariableBag|array $defaultDefaultVariables): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new self(
             $this->template->toString(),
             $this->filterVariables($defaultDefaultVariables)->all()
@@ -135,6 +146,9 @@ final class UriTemplate
 =======
         return new self($this->template, $defaultDefaultVariables);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return new self($this->template, $defaultDefaultVariables);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

@@ -16,11 +16,17 @@ interface CommentStrategy
     public function endOfLoopValidations(EmailLexer $lexer): Result;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getWarnings() : array;
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     /**
      * @return Warning[]
      */
     public function getWarnings(): array;
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 }

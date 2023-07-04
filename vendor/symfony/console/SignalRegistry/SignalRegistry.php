@@ -40,6 +40,7 @@ final class SignalRegistry
     public static function isSupported(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!\function_exists('pcntl_signal')) {
             return false;
         }
@@ -52,6 +53,9 @@ final class SignalRegistry
 =======
         return \function_exists('pcntl_signal');
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return \function_exists('pcntl_signal');
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

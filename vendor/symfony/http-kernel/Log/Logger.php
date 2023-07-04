@@ -64,6 +64,7 @@ class Logger extends AbstractLogger implements DebugLoggerInterface
 
             if (isset($_ENV['SHELL_VERBOSITY']) || isset($_SERVER['SHELL_VERBOSITY'])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 switch ((int) ($_ENV['SHELL_VERBOSITY'] ?? $_SERVER['SHELL_VERBOSITY'])) {
                     case -1: $minLevel = LogLevel::ERROR;
                         break;
@@ -75,6 +76,8 @@ class Logger extends AbstractLogger implements DebugLoggerInterface
                         break;
                 }
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $minLevel = match ((int) ($_ENV['SHELL_VERBOSITY'] ?? $_SERVER['SHELL_VERBOSITY'])) {
                     -1 => LogLevel::ERROR,
                     1 => LogLevel::NOTICE,
@@ -82,7 +85,10 @@ class Logger extends AbstractLogger implements DebugLoggerInterface
                     3 => LogLevel::DEBUG,
                     default => $minLevel,
                 };
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
         }
 

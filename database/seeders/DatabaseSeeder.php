@@ -2,11 +2,15 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
+
+
+
 use App\Models\{ Film, Category, Actor };
 
 use App\Models\{ User, Company,Project,Task};
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Menu;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,8 +25,18 @@ class DatabaseSeeder extends Seeder
  
 
 
+<<<<<<< HEAD
 
 /*
+=======
+      // Créer 10 utilisateurs avec 2 menus chacun
+      User::factory()->count(12)->create()->each(function ($user) {
+          $user->menus()->saveMany(Menu::factory()->count(2)->make());
+      });
+ 
+//  \App\Models\Menu::factory(10)->create();
+/* 
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      Category::factory()
     ->has(Film::factory()->count(4))
     ->count(10)
@@ -57,3 +71,7 @@ class DatabaseSeeder extends Seeder
         */
     }
 }
+
+
+
+

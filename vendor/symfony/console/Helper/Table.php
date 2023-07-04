@@ -430,15 +430,21 @@ class Table
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ($this->horizontal) {
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 if ($vertical) {
                     $isHeader = false;
                     $isFirstRow = false;
                 }
 
                 if ($horizontal) {
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                     $this->renderRow($row, $this->style->getCellRowFormat(), $this->style->getCellHeaderFormat());
                 } else {
                     $this->renderRow($row, $isHeader ? $this->style->getCellHeaderFormat() : $this->style->getCellRowFormat());
@@ -798,10 +804,14 @@ class Table
      * Calculates columns widths.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function calculateColumnsWidth(iterable $groups)
 =======
     private function calculateColumnsWidth(iterable $groups): void
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private function calculateColumnsWidth(iterable $groups): void
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         for ($column = 0; $column < $this->numberOfColumns; ++$column) {
             $lengths = [];
@@ -817,10 +827,14 @@ class Table
                             $textLength = Helper::width($textContent);
                             if ($textLength > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 $contentColumns = str_split($textContent, ceil($textLength / $cell->getColspan()));
 =======
                                 $contentColumns = mb_str_split($textContent, ceil($textLength / $cell->getColspan()));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                                $contentColumns = mb_str_split($textContent, ceil($textLength / $cell->getColspan()));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                                 foreach ($contentColumns as $position => $content) {
                                     $row[$i + $position] = $content;
                                 }

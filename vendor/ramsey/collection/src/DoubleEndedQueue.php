@@ -33,6 +33,7 @@ class DoubleEndedQueue extends Queue implements DoubleEndedQueueInterface
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Index of the last element in the queue.
      */
     private int $tail = -1;
@@ -63,15 +64,29 @@ class DoubleEndedQueue extends Queue implements DoubleEndedQueueInterface
     {
         parent::__construct($this->queueType, $data);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * Constructs a double-ended queue (dequeue) object of the specified type,
+     * optionally with the specified data.
+     *
+     * @param string $queueType The type or class name associated with this dequeue.
+     * @param array<array-key, T> $data The initial items to store in the dequeue.
+     */
+    public function __construct(private readonly string $queueType, array $data = [])
+    {
+        parent::__construct($this->queueType, $data);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**
      * @throws InvalidArgumentException if $element is of the wrong type
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @inheritDoc
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function addFirst(mixed $element): bool
     {

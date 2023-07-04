@@ -27,6 +27,7 @@
     "homepage": "https://www.doctrine-project.org/projects/lexer.html",
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.1 || ^8.0",
         "doctrine/deprecations": "^1.0"
     },
@@ -40,12 +41,20 @@
         "php": "^8.1"
     },
     "require-dev": {
+=======
+        "php": "^8.1"
+    },
+    "require-dev": {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         "doctrine/coding-standard": "^10",
         "phpstan/phpstan": "^1.9",
         "phpunit/phpunit": "^9.5",
         "psalm/plugin-phpunit": "^0.18.3",
         "vimeo/psalm": "^5.0"
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     },
     "autoload": {
         "psr-4": {

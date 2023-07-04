@@ -37,9 +37,12 @@ use function in_array;
 use function is_int;
 use function is_object;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function reset;
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 use function spl_object_id;
 use function sprintf;
 use function usort;
@@ -181,10 +184,14 @@ abstract class AbstractCollection extends AbstractArray implements CollectionInt
                 $bValue = $this->extractValue($b, $propertyOrMethod);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return ($aValue <=> $bValue) * ($order === self::SORT_DESC ? -1 : 1);
 =======
                 return ($aValue <=> $bValue) * ($order === Sort::Descending ? -1 : 1);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                return ($aValue <=> $bValue) * ($order === Sort::Descending ? -1 : 1);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             },
         );
 
@@ -392,6 +399,7 @@ abstract class AbstractCollection extends AbstractArray implements CollectionInt
     private function getUniformType(CollectionInterface $collection): string
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         switch ($collection->getType()) {
             case 'integer':
                 return 'int';
@@ -403,12 +411,17 @@ abstract class AbstractCollection extends AbstractArray implements CollectionInt
                 return $collection->getType();
         }
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         return match ($collection->getType()) {
             'integer' => 'int',
             'boolean' => 'bool',
             'double' => 'float',
             default => $collection->getType(),
         };
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 }

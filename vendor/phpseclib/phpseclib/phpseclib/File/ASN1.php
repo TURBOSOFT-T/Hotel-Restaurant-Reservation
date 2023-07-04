@@ -206,10 +206,14 @@ abstract class ASN1
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [self::decode_ber($encoded)];
 =======
         return [$decoded];
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return [$decoded];
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

@@ -103,11 +103,16 @@ class MongoDbSessionHandler extends AbstractSessionHandler
     protected function doWrite(#[\SensitiveParameter] string $sessionId, string $data): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $expiry = new UTCDateTime((time() + (int) \ini_get('session.gc_maxlifetime')) * 1000);
 =======
         $ttl = ($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime');
         $expiry = new UTCDateTime((time() + (int) $ttl) * 1000);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $ttl = ($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime');
+        $expiry = new UTCDateTime((time() + (int) $ttl) * 1000);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         $fields = [
             $this->options['time_field'] => new UTCDateTime(),
@@ -127,11 +132,16 @@ class MongoDbSessionHandler extends AbstractSessionHandler
     public function updateTimestamp(#[\SensitiveParameter] string $sessionId, string $data): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $expiry = new UTCDateTime((time() + (int) \ini_get('session.gc_maxlifetime')) * 1000);
 =======
         $ttl = ($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime');
         $expiry = new UTCDateTime((time() + (int) $ttl) * 1000);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        $ttl = ($this->ttl instanceof \Closure ? ($this->ttl)() : $this->ttl) ?? \ini_get('session.gc_maxlifetime');
+        $expiry = new UTCDateTime((time() + (int) $ttl) * 1000);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
         $this->getCollection()->updateOne(
             [$this->options['id_field'] => $sessionId],

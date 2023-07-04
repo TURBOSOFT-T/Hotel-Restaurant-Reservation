@@ -1,14 +1,20 @@
 # CHANGELOG
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## [Unreleased](https://github.com/FakerPHP/Faker/compare/v1.22.0...main)
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 ## [Unreleased](https://github.com/FakerPHP/Faker/compare/v1.23.0...main)
 
 ## [2023-06-12, v1.23.0](https://github.com/FakerPHP/Faker/compare/v1.22.0..v1.23.0)
 
 - Update `randomElements` to return random number of elements when no count is provided (#658)
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
 
 ## [2023-05-14, v1.22.0](https://github.com/FakerPHP/Faker/compare/v1.21.0..v1.22.0)
 

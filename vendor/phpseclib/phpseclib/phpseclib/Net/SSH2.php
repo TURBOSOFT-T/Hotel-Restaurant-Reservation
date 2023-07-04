@@ -847,6 +847,7 @@ class SSH2
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Flag set while exec() is running when using enablePTY()
      *
      * @var bool
@@ -863,6 +864,8 @@ class SSH2
     /**
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * Contents of stdError
      *
      * @var string
@@ -2828,11 +2831,16 @@ class SSH2
         $this->channel_status[self::CHANNEL_EXEC] = NET_SSH2_MSG_CHANNEL_DATA;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->in_request_pty_exec) {
 =======
         if ($this->request_pty === true) {
             $this->channel_id_last_interactive = self::CHANNEL_EXEC;
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if ($this->request_pty === true) {
+            $this->channel_id_last_interactive = self::CHANNEL_EXEC;
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             return true;
         }
 
@@ -2861,6 +2869,7 @@ class SSH2
      * How many channels are currently open?
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @see self::read()
      * @see self::write()
      * @return bool
@@ -2869,6 +2878,9 @@ class SSH2
 =======
      * @return int
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @return int
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function getOpenChannelCount()
     {
@@ -3089,9 +3101,13 @@ class SSH2
      * @return string|bool|null
      * @throws \RuntimeException on connection error
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @throws InsufficientSetupException on unexpected channel status, possibly due to closure
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+     * @throws InsufficientSetupException on unexpected channel status, possibly due to closure
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function read($expect = '', $mode = self::READ_SIMPLE, $channel = null)
     {
@@ -3235,7 +3251,10 @@ class SSH2
      * If read() timed out you might want to just close the channel and have it auto-restart on the next read() call
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * If not specifying a channel, an open interactive channel will be selected. If there are
      * multiple open interactive channels, a legacy behavior will apply in which channel selection
      * prioritizes an active subsystem, the exec pty, and, lastly, the shell. If using multiple
@@ -3244,7 +3263,10 @@ class SSH2
      *
      * @param int|null $channel Channel id returned by self::getInteractiveChannelId()
      * @return void
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     public function reset($channel = null)
     {

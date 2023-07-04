@@ -50,10 +50,14 @@ class Caster
             try {
                 $debugInfo = $obj->__debugInfo();
 <<<<<<< HEAD
+<<<<<<< HEAD
             } catch (\Throwable $e) {
 =======
             } catch (\Throwable) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            } catch (\Throwable) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 // ignore failing __debugInfo()
                 $hasDebugInfo = false;
             }

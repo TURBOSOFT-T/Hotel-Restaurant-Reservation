@@ -29,6 +29,7 @@ final class VarSpecifier
     $/x';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private string $name;
     private string $modifier;
     private int $position;
@@ -39,12 +40,17 @@ final class VarSpecifier
         $this->modifier = $modifier;
         $this->position = $position;
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     private function __construct(
         public readonly string $name,
         public readonly string $modifier,
         public readonly int $position
     ) {
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     /**

@@ -20,11 +20,15 @@
     ],
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.4 || ^8.0",
         "symfony/polyfill-php81": "^1.23"
 =======
         "php": "^8.1"
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        "php": "^8.1"
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     },
     "require-dev": {
         "captainhook/plugin-composer": "^5.3",

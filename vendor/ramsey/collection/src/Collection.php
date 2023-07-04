@@ -77,6 +77,7 @@ class Collection extends AbstractCollection
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * The type of elements stored in this collection.
      *
      * A collection's type is immutable once it is set. For this reason, this
@@ -87,6 +88,8 @@ class Collection extends AbstractCollection
     /**
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * Constructs a collection object of the specified type, optionally with the
      * specified data.
      *

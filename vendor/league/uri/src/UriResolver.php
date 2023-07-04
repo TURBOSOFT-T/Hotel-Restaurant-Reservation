@@ -83,6 +83,7 @@ final class UriResolver
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Filter the URI object.
      *
      * @param mixed $uri an URI object
@@ -99,6 +100,8 @@ final class UriResolver
     /**
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      * Remove dot segments from the URI path.
      */
     private static function removeDotSegments(string $path): string
@@ -262,6 +265,7 @@ final class UriResolver
     /**
      * Filter the URI object.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @param Psr7UriInterface|UriInterface $uri
      *
@@ -270,6 +274,8 @@ final class UriResolver
      * @return Psr7UriInterface|UriInterface
 =======
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
      */
     private static function formatHost(Psr7UriInterface|UriInterface $uri): Psr7UriInterface|UriInterface
     {

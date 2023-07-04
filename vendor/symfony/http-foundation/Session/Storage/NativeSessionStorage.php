@@ -129,10 +129,14 @@ class NativeSessionStorage implements SessionStorageInterface
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOLEAN) && headers_sent($file, $line)) {
 =======
         if (filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOL) && headers_sent($file, $line)) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (filter_var(\ini_get('session.use_cookies'), \FILTER_VALIDATE_BOOL) && headers_sent($file, $line)) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             throw new \RuntimeException(sprintf('Failed to start the session because headers have already been sent by "%s" at line %d.', $file, $line));
         }
 

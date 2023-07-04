@@ -37,6 +37,7 @@ class LocalPart extends PartParser
         $this->lexer->startRecording();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         while (((array) $this->lexer->token)['type'] !== EmailLexer::S_AT && null !== ((array) $this->lexer->token)['type']) {
             if ($this->hasDotAtStart()) {
                 return new InvalidEmail(new DotAtStart(), ((array) $this->lexer->token)['value']);
@@ -51,6 +52,14 @@ class LocalPart extends PartParser
 
             if ($this->lexer->current->isA(EmailLexer::S_DQUOTE)) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        while (!$this->lexer->current->isA(EmailLexer::S_AT) && !$this->lexer->current->isA(EmailLexer::S_EMPTY)) {
+            if ($this->hasDotAtStart()) {
+                return new InvalidEmail(new DotAtStart(), $this->lexer->current->value);
+            }
+
+            if ($this->lexer->current->isA(EmailLexer::S_DQUOTE)) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $dquoteParsingResult = $this->parseDoubleQuote();
 
                 //Invalid double quote parsing
@@ -60,14 +69,20 @@ class LocalPart extends PartParser
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (((array) $this->lexer->token)['type'] === EmailLexer::S_OPENPARENTHESIS ||
                 ((array) $this->lexer->token)['type'] === EmailLexer::S_CLOSEPARENTHESIS ) {
 =======
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             if (
                 $this->lexer->current->isA(EmailLexer::S_OPENPARENTHESIS) ||
                 $this->lexer->current->isA(EmailLexer::S_CLOSEPARENTHESIS)
             ) {
+<<<<<<< HEAD
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
                 $commentsResult = $this->parseComments();
 
                 //Invalid comment parsing
@@ -76,6 +91,7 @@ class LocalPart extends PartParser
                 }
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (((array) $this->lexer->token)['type'] === EmailLexer::S_DOT && $this->lexer->isNextToken(EmailLexer::S_DOT)) {
                 return new InvalidEmail(new ConsecutiveDot(), ((array) $this->lexer->token)['value']);
@@ -96,6 +112,17 @@ class LocalPart extends PartParser
             ) {
                 return new InvalidEmail(new DotAtEnd(), $this->lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            if ($this->lexer->current->isA(EmailLexer::S_DOT) && $this->lexer->isNextToken(EmailLexer::S_DOT)) {
+                return new InvalidEmail(new ConsecutiveDot(), $this->lexer->current->value);
+            }
+
+            if (
+                $this->lexer->current->isA(EmailLexer::S_DOT) &&
+                $this->lexer->isNextToken(EmailLexer::S_AT)
+            ) {
+                return new InvalidEmail(new DotAtEnd(), $this->lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             $resultEscaping = $this->validateEscaping();
@@ -128,12 +155,17 @@ class LocalPart extends PartParser
     protected function validateTokens(bool $hasComments): Result
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (isset(self::INVALID_TOKENS[((array) $this->lexer->token)['type']])) {
             return new InvalidEmail(new ExpectingATEXT('Invalid token found'), ((array) $this->lexer->token)['value']);
 =======
         if (isset(self::INVALID_TOKENS[$this->lexer->current->type])) {
             return new InvalidEmail(new ExpectingATEXT('Invalid token found'), $this->lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (isset(self::INVALID_TOKENS[$this->lexer->current->type])) {
+            return new InvalidEmail(new ExpectingATEXT('Invalid token found'), $this->lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
         return new ValidEmail();
     }
@@ -144,10 +176,14 @@ class LocalPart extends PartParser
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private function parseLocalFWS() : Result
 =======
     private function parseLocalFWS(): Result
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+    private function parseLocalFWS(): Result
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     {
         $foldingWS = new FoldingWhiteSpace($this->lexer);
         $resultFWS = $foldingWS->parse();
@@ -160,10 +196,14 @@ class LocalPart extends PartParser
     private function hasDotAtStart(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return ((array) $this->lexer->token)['type'] === EmailLexer::S_DOT && null === $this->lexer->getPrevious()['type'];
 =======
         return $this->lexer->current->isA(EmailLexer::S_DOT) && $this->lexer->getPrevious()->isA(EmailLexer::S_EMPTY);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        return $this->lexer->current->isA(EmailLexer::S_DOT) && $this->lexer->getPrevious()->isA(EmailLexer::S_EMPTY);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
     }
 
     private function parseDoubleQuote(): Result
@@ -190,19 +230,27 @@ class LocalPart extends PartParser
     {
         //Backslash found
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (((array) $this->lexer->token)['type'] !== EmailLexer::S_BACKSLASH) {
 =======
         if (!$this->lexer->current->isA(EmailLexer::S_BACKSLASH)) {
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+        if (!$this->lexer->current->isA(EmailLexer::S_BACKSLASH)) {
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             return new ValidEmail();
         }
 
         if ($this->lexer->isNextToken(EmailLexer::GENERIC)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return new InvalidEmail(new ExpectingATEXT('Found ATOM after escaping'), ((array) $this->lexer->token)['value']);
 =======
             return new InvalidEmail(new ExpectingATEXT('Found ATOM after escaping'), $this->lexer->current->value);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            return new InvalidEmail(new ExpectingATEXT('Found ATOM after escaping'), $this->lexer->current->value);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
 
         if (!$this->lexer->isNextTokenAny(array(EmailLexer::S_SP, EmailLexer::S_HTAB, EmailLexer::C_DEL))) {

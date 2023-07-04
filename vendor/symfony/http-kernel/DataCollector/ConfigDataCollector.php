@@ -59,12 +59,17 @@ class ConfigDataCollector extends DataCollector implements LateDataCollectorInte
             'php_timezone' => date_default_timezone_get(),
             'xdebug_enabled' => \extension_loaded('xdebug'),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'apcu_enabled' => \extension_loaded('apcu') && filter_var(\ini_get('apc.enabled'), \FILTER_VALIDATE_BOOLEAN),
             'zend_opcache_enabled' => \extension_loaded('Zend OPcache') && filter_var(\ini_get('opcache.enable'), \FILTER_VALIDATE_BOOLEAN),
 =======
             'apcu_enabled' => \extension_loaded('apcu') && filter_var(\ini_get('apc.enabled'), \FILTER_VALIDATE_BOOL),
             'zend_opcache_enabled' => \extension_loaded('Zend OPcache') && filter_var(\ini_get('opcache.enable'), \FILTER_VALIDATE_BOOL),
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            'apcu_enabled' => \extension_loaded('apcu') && filter_var(\ini_get('apc.enabled'), \FILTER_VALIDATE_BOOL),
+            'zend_opcache_enabled' => \extension_loaded('Zend OPcache') && filter_var(\ini_get('opcache.enable'), \FILTER_VALIDATE_BOOL),
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             'bundles' => [],
             'sapi_name' => \PHP_SAPI,
         ];

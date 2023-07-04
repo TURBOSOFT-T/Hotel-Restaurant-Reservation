@@ -88,10 +88,14 @@ class IpUtils
 
             if ('0' === $netmask) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return self::$checkedIps[$cacheKey] = false !== filter_var($address, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV4);
 =======
                 return self::setCacheResult($cacheKey, false !== filter_var($address, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV4));
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                return self::setCacheResult($cacheKey, false !== filter_var($address, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV4));
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             if ($netmask < 0 || $netmask > 32) {
@@ -135,10 +139,14 @@ class IpUtils
         // Check to see if we were given a IP4 $requestIp or $ip by mistake
         if (!filter_var($requestIp, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV6)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return self::$checkedIps[$cacheKey] = false;
 =======
             return self::setCacheResult($cacheKey, false);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            return self::setCacheResult($cacheKey, false);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         }
 
         if (str_contains($ip, '/')) {
@@ -146,10 +154,14 @@ class IpUtils
 
             if (!filter_var($address, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV6)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return self::$checkedIps[$cacheKey] = false;
 =======
                 return self::setCacheResult($cacheKey, false);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                return self::setCacheResult($cacheKey, false);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             if ('0' === $netmask) {
@@ -162,10 +174,14 @@ class IpUtils
         } else {
             if (!filter_var($ip, \FILTER_VALIDATE_IP, \FILTER_FLAG_IPV6)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return self::$checkedIps[$cacheKey] = false;
 =======
                 return self::setCacheResult($cacheKey, false);
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+                return self::setCacheResult($cacheKey, false);
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
             }
 
             $address = $ip;

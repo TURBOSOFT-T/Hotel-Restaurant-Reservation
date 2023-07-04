@@ -81,6 +81,7 @@ final class MessageConverter
         $parts = $part->getParts();
         if (
 <<<<<<< HEAD
+<<<<<<< HEAD
             2 === \count($parts) &&
             $parts[0] instanceof TextPart && 'text' === $parts[0]->getMediaType() && 'plain' === $parts[0]->getMediaSubtype() &&
             $parts[1] instanceof TextPart && 'text' === $parts[1]->getMediaType() && 'html' === $parts[1]->getMediaSubtype()
@@ -89,6 +90,11 @@ final class MessageConverter
             && $parts[0] instanceof TextPart && 'text' === $parts[0]->getMediaType() && 'plain' === $parts[0]->getMediaSubtype()
             && $parts[1] instanceof TextPart && 'text' === $parts[1]->getMediaType() && 'html' === $parts[1]->getMediaSubtype()
 >>>>>>> 66597818 ( abdou a faire un poushe)
+=======
+            2 === \count($parts)
+            && $parts[0] instanceof TextPart && 'text' === $parts[0]->getMediaType() && 'plain' === $parts[0]->getMediaSubtype()
+            && $parts[1] instanceof TextPart && 'text' === $parts[1]->getMediaType() && 'html' === $parts[1]->getMediaSubtype()
+>>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
         ) {
             return (new Email(clone $message->getHeaders()))
                 ->text($parts[0]->getBody(), $parts[0]->getPreparedHeaders()->getHeaderParameter('Content-Type', 'charset') ?: 'utf-8')
