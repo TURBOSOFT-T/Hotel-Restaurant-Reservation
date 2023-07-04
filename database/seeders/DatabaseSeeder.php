@@ -22,21 +22,18 @@ class DatabaseSeeder extends Seeder
     \App\Models\User::factory(12)->create();
      \App\Models\Project::factory(20)->create();
     \App\Models\Task::factory(33)->create();
- 
 
 
-<<<<<<< HEAD
+
 
 /*
-=======
       // Créer 10 utilisateurs avec 2 menus chacun
       User::factory()->count(12)->create()->each(function ($user) {
           $user->menus()->saveMany(Menu::factory()->count(2)->make());
       });
- 
+
 //  \App\Models\Menu::factory(10)->create();
-/* 
->>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
+/*
      Category::factory()
     ->has(Film::factory()->count(4))
     ->count(10)
