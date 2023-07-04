@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('libelle');
             $table->string('description');
             $table->string('prix');
-            
+
             $table->timestamps();
         });
     }
