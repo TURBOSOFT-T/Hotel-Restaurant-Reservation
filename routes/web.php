@@ -12,9 +12,13 @@ use App\Http\Controllers\Frontend\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use \App\Http\Controllers\MenuController;
 >>>>>>> d75aa89f (update)
+=======
+use \App\Http\Controllers\MenuController;
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +51,10 @@ require __DIR__ . '/auth.php';
 
 Route::get('/contact', [ContactUsFormController::class, 'createForm']);
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
+<<<<<<< HEAD
+=======
+Route::resource('menus', "\App\Http\Controllers\MenuController");
+Route::put('/menus/{id}', [MenuController::class, 'update'])->name('menus.update');
+
+
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a

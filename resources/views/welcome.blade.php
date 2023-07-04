@@ -34,6 +34,7 @@
                         <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">
 Notre restaurant a commencé son aventure culinaire en 1990 lorsque le chef fondateur, Harley Leunouffa, a ouvert les portes de notre établissement pour offrir une expérience gastronomique unique à nos clients. Depuis lors, nous avons travaillé dur pour créer une ambiance chaleureuse et conviviale pour nos clients, tout en offrant une cuisine raffinée et délicieuse.
 
+<<<<<<< HEAD
 Au fil des ans, notre restaurant est devenu une destination incontournable pour les amateurs de cuisine de qualité. Notre chef a créé un menu unique qui combine les saveurs traditionnelles avec une touche moderne et créative, en utilisant des ingrédients frais et de première qualité.
                         </p>
                         <div class="relative flex">
@@ -47,6 +48,109 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
                                     <polyline points="12 5 19 12 12 19"></polyline>
                                 </svg>
                             </a>
+=======
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+        <a href="index.html" class="navbar-brand ps-5 me-0">
+            <h1 class="text-white m-0">Industro</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                            @if (Route::has('contact.store'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('contact.store') }}">{{ __('contact') }}</a>
+                                </li>
+                            @endif
+                        @else
+
+
+
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+
+
+
+
+                            </li>
+
+
+
+
+
+                        @endguest
+
+
+
+
+
+
+
+
+                    </ul>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25 Years
+                                        of Working Experience</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Industrial Solution
+                                        Providing Company</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                </div>
+                            </div>
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a
                         </div>
                     </div>
                 </div>
@@ -596,6 +700,7 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
 
 
 
+<<<<<<< HEAD
 >>>>>>> d75aa89f (update)
 
                         <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">Bien sûr ! Les clients devraient choisir notre restaurant pour plusieurs raisons. Tout d'abord, notre cuisine est exceptionnelle. Nous utilisons des ingrédients frais et de première qualité pour créer des plats uniques et délicieux qui raviront les papilles de nos clients. Notre chef est talentueux et créatif, ce qui se reflète dans chacun de nos plats.
@@ -718,3 +823,37 @@ Au fil des ans, notre restaurant est devenu une destination incontournable pour 
         </div>
     </section>
 </x-guest-layout>
+=======
+
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript">
+
+     $('.show_confirm').click(function(event) {
+          var form =  $(this).closest("form");
+          var name = $(this).data("name");
+          event.preventDefault();
+          swal({
+              title: `Are you sure you want to delete this record?`,
+              text: "If you delete this, it will be gone forever.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              form.submit();
+            }
+          });
+      });
+
+</script>
+</html>
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a

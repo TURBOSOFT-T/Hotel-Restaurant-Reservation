@@ -25,7 +25,6 @@ class DatabaseSeeder extends Seeder
 
 
 /*
-=======
       // Créer 10 utilisateurs avec 2 menus chacun
       User::factory()->count(12)->create()->each(function ($user) {
           $user->menus()->saveMany(Menu::factory()->count(2)->make());
@@ -33,7 +32,10 @@ class DatabaseSeeder extends Seeder
 
 //  \App\Models\Menu::factory(10)->create();
 /*
+<<<<<<< HEAD
 >>>>>>> 78d58579d8af94d392951da7171030736b2e03fa
+=======
+>>>>>>> d75aa89fe525df986fe967ba835a24a55253780a
      Category::factory()
     ->has(Film::factory()->count(4))
     ->count(10)
