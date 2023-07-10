@@ -4,6 +4,16 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+
+    /*
+|--------------------------------------------------------------------------
+| Pagination Configuration
+|--------------------------------------------------------------------------
+*/
+'nbrPages' => [
+    'menus' => 8,
+],
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -127,6 +137,24 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Maintenance Mode Driver
+    |--------------------------------------------------------------------------
+    |
+    | These configuration options determine the driver used to determine and
+    | manage Laravel's "maintenance mode" status. The "cache" driver will
+    | allow maintenance mode to be controlled across multiple machines.
+    |
+    | Supported drivers: "file", "cache"
+    |
+    */
+
+    'maintenance' => [
+        'driver' => 'file',
+        // 'store'  => 'redis',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
@@ -191,7 +219,18 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
     ])->toArray(),
+
+
+    /*
+|--------------------------------------------------------------------------
+| SEO
+|--------------------------------------------------------------------------
+*/
+
+'description' => 'The best site for reservation  in Cameroon',
+'author' => 'The best things',
 
 ];

@@ -14,11 +14,17 @@ class Admin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
+
+
     public function handle(Request $request, Closure $next)
     {
-        if (!auth()->check() || !auth()->user()->is_admin) {
-            abort(403);
+        $user = $request->user();
+
+        if ($user && $user->role === 'admin') {
+            return $next($request);
         }
-        return $next($request);
+
+        return redirect()->route('home');
     }
+
 }
