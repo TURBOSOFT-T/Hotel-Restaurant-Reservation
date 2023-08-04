@@ -19,6 +19,13 @@ Route::name('home')->get('/', [FrontController::class, 'index']);
 Route::name('category')->get('category/{category:slug}', [FrontController::class, 'category']);
 Route::name('author')->get('author/{user}', [FrontController::class, 'user']);
 Route::name('tag')->get('tag/{tag:slug}', [FrontController::class, 'tag']);
+// web.php
+
+Route::get('/contact', 'ContactController@show')->name('contact.show');
+// web.php
+
+Route::post('/contact', 'ContactController@submit')->name('contact.submit');
+
 
 Route::prefix('menus')->group(function () {
     Route::name('menus.display')->get('{slug}', [FrontController::class, 'show']);
