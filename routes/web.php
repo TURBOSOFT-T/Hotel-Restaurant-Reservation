@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\MenuController as FrontController;
 use App\Http\Controllers\Back\AdminController;
+// use App\Http\Controllers\ContactController;
 
 
 
@@ -31,6 +32,10 @@ Route::prefix('admin')->group(function () {
     });
 });
 
+Route::get('/contact', [App\Http\Controllers\ContactController::class, 'show'])->name('contact.show');
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'send'])->name('contact.send');
+// Route::get('/contact', 'ContactController@show')->name('contact.show');
+// Route::post('/contact', 'ContactController@send')->name('contact.send');
 
 
 Route::prefix('menus')->group(function () {

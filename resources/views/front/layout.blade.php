@@ -69,7 +69,7 @@
                     <li class="has-children">
                         <a href="#" title="">@lang('Categories')</a>
                         <ul class="sub-menu">
-                            @foreach($categories as $category)
+                          {{--  @foreach($categories as $category)
                                 <li><a href="{{ route('category', $category->slug) }}">{{ $category->title }}
                             @endforeach
                         </ul>
@@ -81,6 +81,9 @@
    @if(auth()->user())   <li>
             <a href="{{ url('admin') }}">@lang('Administration')</a>
         </li>
+           {{-- <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contact') }}">contact</a>
+                            </li> --}}
         @endif
 
                         <!-- Authentication Links -->
@@ -88,7 +91,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">Connexion</a>
                             </li>
+                        
                         @else
+                   
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -103,8 +108,12 @@
                         @endguest
 
                     </li>
+{{-- 
+                       <li class="nav-item">
+                                <a class="nav-link" href="{{ route('contact')}}">contact</a>
+                            </li> --}}
                 </ul>
-
+s
                 <a href="#0" title="@lang('Close Menu')" class="s-header__overlay-close close-mobile-menu">@lang('Close')</a>
 
             </nav>
